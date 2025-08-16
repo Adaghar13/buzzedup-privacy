@@ -1,98 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Privacy Policy – BuzzedUP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datenschutzerklärung - BuzzedUP</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 15px;
-      background-color: #fafafa;
-      color: #333;
-    }
-    h1 {
-      text-align: center;
-      color: #222;
-    }
-    h2 {
-      margin-top: 25px;
-      color: #444;
-    }
-    pre {
-      white-space: pre-wrap;
-      word-wrap: break-word;
-      background: #f1f1f1;
-      padding: 10px;
-      border-radius: 5px;
-    }
+    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; color: #222; }
+    h1 { color: #c62828; }
+    h2 { margin-top: 30px; }
+    .lang-switch { margin-bottom: 20px; }
+    .lang-switch button { margin-right: 10px; padding: 8px 14px; cursor: pointer; border: none; border-radius: 4px; background: #eee; }
+    .lang-switch button.active { background: #c62828; color: white; }
+    .content { display: none; }
+    .content.active { display: block; }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
+  <h1>BuzzedUP – Datenschutzerklärung / Privacy Policy</h1>
 
-  <p>
-    Information according to § 5 Digital Services Act (DDG):
-  </p>
+  <div class="lang-switch">
+    <button id="de-btn" class="active">Deutsch 🇩🇪</button>
+    <button id="en-btn">English 🇬🇧</button>
+  </div>
 
-  <pre>
-Alexander Fabritus
-c/o flexdienst – #11224
-Kurt-Schumacher-Straße 76
-67663 Kaiserslautern
-Germany
+  <!-- Deutsch -->
+  <div id="de" class="content active">
+    <h2>Impressum</h2>
+    <p>
+      Alexander Fabritus<br>
+      c/o flexdienst – #11224<br>
+      Kurt-Schumacher-Straße 76<br>
+      67663 Kaiserslautern<br>
+      Deutschland<br><br>
+      E-Mail: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
+    </p>
 
-E-Mail: afabritius@gmx.de
-  </pre>
+    <h2>Datenschutz</h2>
+    <p>
+      Diese App speichert oder verarbeitet <strong>keine personenbezogenen Daten dauerhaft</strong>. 
+      Alle eingegebenen Spielernamen werden nur lokal im Arbeitsspeicher (RAM) deines Geräts gespeichert 
+      und beim Beenden der App vollständig gelöscht. Es findet <strong>keine Übertragung</strong> an den Anbieter oder Dritte statt.
+    </p>
+    <p>
+      Grundlage der Verarbeitung ist Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung).
+    </p>
+    <p>
+      Rechte der Nutzer (Art. 15–21 DSGVO): Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch, Datenübertragbarkeit.
+    </p>
+  </div>
 
-  <h2>Data Privacy</h2>
-  <p>
-    This app does not permanently process any personal data. 
-    Player names entered by users are stored only locally and temporarily 
-    in the working memory (RAM) of the device in use. 
-    No permanent storage, transmission, or further processing of this data takes place.
-  </p>
+  <!-- English -->
+  <div id="en" class="content">
+    <h2>Imprint</h2>
+    <p>
+      Alexander Fabritus<br>
+      c/o flexdienst – #11224<br>
+      Kurt-Schumacher-Straße 76<br>
+      67663 Kaiserslautern<br>
+      Germany<br><br>
+      Email: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
+    </p>
 
-  <p>
-    The provider has no access to this data at any time – neither technically nor legally. 
-    All entries remain solely on the user's device.
-  </p>
+    <h2>Privacy Policy</h2>
+    <p>
+      This app does <strong>not store or process any personal data permanently</strong>. 
+      Player names entered are stored only temporarily in the device’s memory (RAM) 
+      and are completely deleted once the app is closed. 
+      There is <strong>no transmission</strong> of data to the provider or third parties.
+    </p>
+    <p>
+      Legal basis of processing: Art. 6 (1) lit. b GDPR (contract performance).
+    </p>
+    <p>
+      User rights (Art. 15–21 GDPR): Access, Rectification, Erasure, Restriction, Objection, Data Portability.
+    </p>
+  </div>
 
-  <h2>Purpose of Data Processing</h2>
-  <p>
-    The entry of a player name serves exclusively to identify the participants 
-    during an ongoing game session.
-  </p>
+  <script>
+    const deBtn = document.getElementById("de-btn");
+    const enBtn = document.getElementById("en-btn");
+    const deContent = document.getElementById("de");
+    const enContent = document.getElementById("en");
 
-  <h2>Legal Basis</h2>
-  <p>
-    Processing is based on Art. 6 (1) lit. b GDPR (contract performance).
-  </p>
+    deBtn.addEventListener("click", () => {
+      deBtn.classList.add("active");
+      enBtn.classList.remove("active");
+      deContent.classList.add("active");
+      enContent.classList.remove("active");
+    });
 
-  <h2>Storage Duration</h2>
-  <p>
-    The entered data (player names) are stored only for the duration of the current game session 
-    in RAM and are completely deleted when the app is closed or restarted. 
-    No permanent storage takes place.
-  </p>
-
-  <h2>User Rights</h2>
-  <ul>
-    <li>Right of access (Art. 15 GDPR)</li>
-    <li>Right to rectification (Art. 16 GDPR)</li>
-    <li>Right to erasure (Art. 17 GDPR)</li>
-    <li>Right to restriction of processing (Art. 18 GDPR)</li>
-    <li>Right to object (Art. 21 GDPR)</li>
-    <li>Right to data portability (Art. 20 GDPR)</li>
-    <li>Right to lodge a complaint with a supervisory authority (Art. 13 (2) d GDPR)</li>
-  </ul>
-
-  <h2>Notice</h2>
-  <p>
-    Entering a player name is voluntary but required to use the app's game functions. 
-    The use of a pseudonym is possible at any time.
-  </p>
+    enBtn.addEventListener("click", () => {
+      enBtn.classList.add("active");
+      deBtn.classList.remove("active");
+      enContent.classList.add("active");
+      deContent.classList.remove("active");
+    });
+  </script>
 </body>
 </html>
