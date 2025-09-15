@@ -13,67 +13,176 @@
     .lang-switch button.active { background: #c62828; color: white; }
     .content { display: none; }
     .content.active { display: block; }
+    a { color: #c62828; }
+    ul { margin: 0; padding-left: 20px; }
+    .section { margin-top: 18px; }
+    .mono { white-space: pre-line; }
   </style>
 </head>
 <body>
   <h1>BuzzedUP – Datenschutzerklärung / Privacy Policy</h1>
 
-  <div class="lang-switch">
-    <button id="de-btn" class="active">Deutsch 🇩🇪</button>
-    <button id="en-btn">English 🇬🇧</button>
+  <div class="lang-switch" role="tablist" aria-label="Language switch">
+    <button id="de-btn" class="active" role="tab" aria-selected="true" aria-controls="de">Deutsch 🇩🇪</button>
+    <button id="en-btn" role="tab" aria-selected="false" aria-controls="en">English 🇬🇧</button>
   </div>
 
   <!-- Deutsch -->
-  <div id="de" class="content active">
+  <div id="de" class="content active" role="tabpanel" aria-labelledby="de-btn">
     <h2>Impressum</h2>
-    <p>
-      Alexander Fabritus<br>
-      c/o flexdienst – #11224<br>
-      Kurt-Schumacher-Straße 76<br>
-      67663 Kaiserslautern<br>
-      Deutschland<br><br>
-      E-Mail: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
+    <p class="mono">
+Angabe gemäß § 5 Digitale-Dienste-Gesetz (DDG):
+
+Alexander Fabritus
+c/o flexdienst – #11224
+Kurt-Schumacher-Straße 76
+67663 Kaiserslautern
+Deutschland
+
+E-Mail: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
     </p>
 
-    <h2>Datenschutz</h2>
-    <p>
-      Diese App speichert oder verarbeitet <strong>keine personenbezogenen Daten dauerhaft</strong>. 
-      Alle eingegebenen Spielernamen werden nur lokal im Arbeitsspeicher (RAM) deines Geräts gespeichert 
-      und beim Beenden der App vollständig gelöscht. Es findet <strong>keine Übertragung</strong> an den Anbieter oder Dritte statt.
-    </p>
-    <p>
-      Grundlage der Verarbeitung ist Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung).
-    </p>
-    <p>
-      Rechte der Nutzer (Art. 15–21 DSGVO): Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch, Datenübertragbarkeit.
-    </p>
+    <h2>Datenschutzinformationen gemäß Art. 13 DSGVO</h2>
+
+    <div class="section">
+      <h3>1. Verantwortlicher im Sinne der DSGVO</h3>
+      <p class="mono">
+Alexander Fabritus
+c/o flexdienst – #11224
+Kurt-Schumacher-Straße 76
+67663 Kaiserslautern
+Deutschland
+
+E-Mail: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
+      </p>
+    </div>
+
+    <div class="section">
+      <h3>2. Verarbeitung personenbezogener Daten in der App</h3>
+      <p>Die App verarbeitet keine personenbezogenen Daten dauerhaft. Von Nutzerinnen und Nutzern eingegebene Spielernamen werden ausschließlich lokal und temporär im Arbeitsspeicher (RAM) des verwendeten Endgeräts gespeichert. Eine dauerhafte Speicherung, Übermittlung oder sonstige Verarbeitung dieser Daten findet nicht statt.</p>
+      <p>Der Anbieter hat zu keinem Zeitpunkt Zugriff auf diese Daten – weder technisch noch rechtlich. Sämtliche Eingaben verbleiben ausschließlich auf dem jeweiligen Endgerät der Nutzerin bzw. des Nutzers.</p>
+    </div>
+
+    <div class="section">
+      <h3>3. Zweck und Rechtsgrundlage der Datenverarbeitung</h3>
+      <p>Die Eingabe eines Spielernamens dient ausschließlich der Identifikation der Spielteilnehmenden während einer laufenden Spielsitzung.</p>
+      <p>Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung), da die Eingabe irgendeines Namens für die Spielfunktion erforderlich ist.</p>
+    </div>
+
+    <div class="section">
+      <h3>4. Dauer der Speicherung</h3>
+      <p>Die eingegebenen Daten (Spielernamen) werden ausschließlich für die Dauer der jeweiligen Spielsitzung im RAM gespeichert und mit Beendigung oder Neustart der App vollständig gelöscht. Eine dauerhafte Speicherung erfolgt nicht.</p>
+    </div>
+
+    <div class="section">
+      <h3>5. Kommunikation mit uns</h3>
+      <p>Soweit Sie mit uns über ein Kontaktformular, per E-Mail oder einen anderen Kanal kommunizieren, verarbeiten wir Ihre personenbezogenen Daten zur Bearbeitung Ihrer Anfrage. Dies umfasst insbesondere Kontaktdaten (z. B. Anrede, Name, E-Mail-Adresse, Unternehmen, Anschrift, Telefonnummer – jeweils soweit angegeben) sowie Inhaltsdaten der Kommunikation (z. B. Betreff und Nachricht).</p>
+      <p>Rechtsgrundlage für diese Verarbeitung ist Art. 6 Abs. 1 S. 1 lit. f DSGVO. Unser berechtigtes Interesse liegt in der Ermöglichung einer Kontaktaufnahme, der persönlichen Ansprache, der Bearbeitung Ihrer Anfrage sowie in einer kundenorientierten Kommunikation und Kundenbindung.</p>
+    </div>
+
+    <div class="section">
+      <h3>6. Rechte der betroffenen Personen</h3>
+      <p>Da keine dauerhafte Speicherung von in der App eingegebenen Daten erfolgt und die Verarbeitung ausschließlich lokal und temporär ist, sind personenbezogene Daten (Spielernamen) nach einem Neustart der App nicht mehr rekonstruierbar oder einer betroffenen Person zuordenbar.</p>
+      <p>Unabhängig davon stehen Ihnen folgende Rechte nach der Datenschutz-Grundverordnung (DSGVO) zu:</p>
+      <ul>
+        <li>Recht auf Auskunft (Art. 15 DSGVO)</li>
+        <li>Recht auf Berichtigung (Art. 16 DSGVO)</li>
+        <li>Recht auf Löschung (Art. 17 DSGVO)</li>
+        <li>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+        <li>Recht auf Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li>
+        <li>Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</li>
+        <li>Beschwerderecht bei einer Aufsichtsbehörde (Art. 13 Abs. 2 lit. d DSGVO)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>7. Pflicht zur Bereitstellung personenbezogener Daten</h3>
+      <p>Die Angabe eines Spielernamens ist freiwillig, jedoch Voraussetzung für die Nutzung der Spielfunktionen der App. Ohne die Eingabe eines (beliebigen) Namens kann kein Spiel gestartet werden. Die Nutzung eines Pseudonyms oder Alias ist jederzeit möglich; es ist keine Angabe eines echten Namens erforderlich.</p>
+    </div>
+
+    <div class="section">
+      <h3>8. Automatisierte Entscheidungsfindung / Profiling</h3>
+      <p>In der App erfolgt keine automatisierte Entscheidungsfindung im Sinne von Art. 22 DSGVO. Es findet kein Profiling statt.</p>
+    </div>
   </div>
 
   <!-- English -->
-  <div id="en" class="content">
+  <div id="en" class="content" role="tabpanel" aria-labelledby="en-btn">
     <h2>Imprint</h2>
-    <p>
-      Alexander Fabritus<br>
-      c/o flexdienst – #11224<br>
-      Kurt-Schumacher-Straße 76<br>
-      67663 Kaiserslautern<br>
-      Germany<br><br>
-      Email: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
+    <p class="mono">
+Information according to § 5 German Digital Services Act (DDG):
+
+Alexander Fabritus
+c/o flexdienst – #11224
+Kurt-Schumacher-Straße 76
+67663 Kaiserslautern
+Germany
+
+Email: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
     </p>
 
-    <h2>Privacy Policy</h2>
-    <p>
-      This app does <strong>not store or process any personal data permanently</strong>. 
-      Player names entered are stored only temporarily in the device’s memory (RAM) 
-      and are completely deleted once the app is closed. 
-      There is <strong>no transmission</strong> of data to the provider or third parties.
-    </p>
-    <p>
-      Legal basis of processing: Art. 6 (1) lit. b GDPR (contract performance).
-    </p>
-    <p>
-      User rights (Art. 15–21 GDPR): Access, Rectification, Erasure, Restriction, Objection, Data Portability.
-    </p>
+    <h2>Privacy Information pursuant to Art. 13 GDPR</h2>
+
+    <div class="section">
+      <h3>1. Controller within the meaning of the GDPR</h3>
+      <p class="mono">
+Alexander Fabritus
+c/o flexdienst – #11224
+Kurt-Schumacher-Straße 76
+67663 Kaiserslautern
+Germany
+
+Email: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
+      </p>
+    </div>
+
+    <div class="section">
+      <h3>2. Processing of personal data in the app</h3>
+      <p>The app does not permanently process any personal data. Player names entered by users are stored exclusively locally and temporarily in the working memory (RAM) of the device in use. There is no permanent storage, transmission, or further processing of this data.</p>
+      <p>The provider has no access to this data at any time – neither technically nor legally. All entries remain exclusively on the user’s device.</p>
+    </div>
+
+    <div class="section">
+      <h3>3. Purpose and legal basis of data processing</h3>
+      <p>Entering a player name is solely for the purpose of identifying the participants during an active game session.</p>
+      <p>Processing is carried out on the basis of Art. 6 (1) lit. b GDPR (performance of a contract), as entering some name is necessary for the game to function.</p>
+    </div>
+
+    <div class="section">
+      <h3>4. Duration of storage</h3>
+      <p>The entered data (player names) are stored only for the duration of the respective game session in RAM and are completely deleted when the app is closed or restarted. No permanent storage takes place.</p>
+    </div>
+
+    <div class="section">
+      <h3>5. Communication with us</h3>
+      <p>If you contact us via a contact form, by e-mail, or through any other channel, we process your personal data for the purpose of handling your request. This includes, in particular, contact details (e.g., salutation, name, e-mail address, company, address, telephone number – insofar as provided) as well as the content data of the communication (e.g., subject and message).</p>
+      <p>The legal basis for this processing is Art. 6 (1) sentence 1 lit. f GDPR. Our legitimate interest lies in enabling communication, addressing you personally, processing your request, and maintaining customer-oriented communication and customer relations.</p>
+    </div>
+
+    <div class="section">
+      <h3>6. Rights of data subjects</h3>
+      <p>Since no permanent storage of the data entered in the app takes place and processing is exclusively local and temporary, personal data (player names) cannot be reconstructed or attributed to a person after restarting the app.</p>
+      <p>Regardless of this, you have the following rights under the General Data Protection Regulation (GDPR):</p>
+      <ul>
+        <li>Right of access (Art. 15 GDPR)</li>
+        <li>Right to rectification (Art. 16 GDPR)</li>
+        <li>Right to erasure (Art. 17 GDPR)</li>
+        <li>Right to restriction of processing (Art. 18 GDPR)</li>
+        <li>Right to object to processing (Art. 21 GDPR)</li>
+        <li>Right to data portability (Art. 20 GDPR)</li>
+        <li>Right to lodge a complaint with a supervisory authority (Art. 13 (2) lit. d GDPR)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>7. Obligation to provide personal data</h3>
+      <p>Providing a player name is voluntary but required for using the game functions of the app. Without entering a (random) name, no game can be started. The use of a pseudonym or alias is always possible; providing a real name is not required.</p>
+    </div>
+
+    <div class="section">
+      <h3>8. Automated decision-making / profiling</h3>
+      <p>No automated decision-making within the meaning of Art. 22 GDPR takes place in the app. No profiling is carried out.</p>
+    </div>
   </div>
 
   <script>
@@ -82,19 +191,149 @@
     const deContent = document.getElementById("de");
     const enContent = document.getElementById("en");
 
-    deBtn.addEventListener("click", () => {
-      deBtn.classList.add("active");
-      enBtn.classList.remove("active");
-      deContent.classList.add("active");
-      enContent.classList.remove("active");
-    });
+    function activate(lang) {
+      const isDE = lang === "de";
+      deBtn.classList.toggle("active", isDE);
+      enBtn.classList.toggle("active", !isDE);
+      deBtn.setAttribute("aria-selected", isDE.toString());
+      enBtn.setAttribute("aria-selected", (!isDE).toString());
+      deContent.classList.toggle("active", isDE);
+      enContent.classList.toggle("active", !isDE);
+    }
 
-    enBtn.addEventListener("click", () => {
-      enBtn.classList.add("active");
-      deBtn.classList.remove("active");
-      enContent.classList.add("active");
-      deContent.classList.remove("active");
-    });
+    deBtn.addEventListener("click", () => activate("de"));
+    enBtn.addEventListener("click", () => activate("en"));
   </script>
+ <!-- Français -->
+  <div id="fr" class="content" role="tabpanel" aria-labelledby="fr-btn">
+    <h2>Mentions légales</h2>
+    <p class="mono">
+Conformément à l’article 5 de la loi allemande sur les services numériques (DDG) :
+
+Alexander Fabritus
+c/o flexdienst – #11224
+Kurt-Schumacher-Straße 76
+67663 Kaiserslautern
+Allemagne
+
+E-Mail : <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
+    </p>
+
+    <h2>Informations sur la protection des données conformément à l’art. 13 RGPD</h2>
+
+    <div class="section">
+      <h3>1. Responsable au sens du RGPD</h3>
+      <p class="mono">
+Alexander Fabritus
+c/o flexdienst – #11224
+Kurt-Schumacher-Straße 76
+67663 Kaiserslautern
+Allemagne
+
+E-Mail : <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
+      </p>
+    </div>
+
+    <div class="section">
+      <h3>2. Traitement des données personnelles dans l’application</h3>
+      <p>L’application ne traite aucune donnée personnelle de manière permanente. Les noms de joueurs saisis par les utilisateurs sont enregistrés uniquement localement et temporairement dans la mémoire vive (RAM) de l’appareil utilisé. Il n’y a pas de stockage, transmission ou autre traitement permanent de ces données.</p>
+      <p>Le fournisseur n’a à aucun moment accès à ces données – ni techniquement ni juridiquement. Toutes les saisies restent exclusivement sur l’appareil de l’utilisateur.</p>
+    </div>
+
+    <div class="section">
+      <h3>3. Finalité et base juridique</h3>
+      <p>La saisie d’un nom de joueur sert uniquement à identifier les participants pendant une session de jeu en cours.</p>
+      <p>Le traitement est fondé sur l’art. 6, par. 1, let. b RGPD (exécution du contrat), car l’indication d’un nom quelconque est nécessaire au fonctionnement du jeu.</p>
+    </div>
+
+    <div class="section">
+      <h3>4. Durée de conservation</h3>
+      <p>Les données saisies (noms de joueurs) sont conservées uniquement pour la durée de la session de jeu correspondante dans la RAM et sont totalement supprimées à la fermeture ou au redémarrage de l’application. Aucun stockage permanent n’a lieu.</p>
+    </div>
+
+    <div class="section">
+      <h3>5. Communication avec nous</h3>
+      <p>Si vous nous contactez via un formulaire de contact, par e-mail ou par un autre canal, nous traitons vos données personnelles afin de traiter votre demande. Cela inclut notamment les coordonnées (par ex. civilité, nom, adresse e-mail, entreprise, adresse postale, numéro de téléphone – dans la mesure où elles sont fournies) ainsi que les données de contenu de la communication (par ex. objet et message).</p>
+      <p>La base juridique de ce traitement est l’art. 6, par. 1, phrase 1, let. f RGPD. Notre intérêt légitime réside dans la possibilité d’établir une communication, de vous adresser personnellement, de traiter votre demande et de maintenir une communication et une relation client axées sur le service.</p>
+    </div>
+
+    <div class="section">
+      <h3>6. Droits des personnes concernées</h3>
+      <p>Comme aucune conservation permanente des données saisies dans l’application n’a lieu et que le traitement est exclusivement local et temporaire, les données personnelles (noms de joueurs) ne peuvent pas être reconstituées ni attribuées à une personne après le redémarrage de l’application.</p>
+      <p>Indépendamment de cela, vous disposez des droits suivants selon le Règlement général sur la protection des données (RGPD) :</p>
+      <ul>
+        <li>Droit d’accès (art. 15 RGPD)</li>
+        <li>Droit de rectification (art. 16 RGPD)</li>
+        <li>Droit à l’effacement (art. 17 RGPD)</li>
+        <li>Droit à la limitation du traitement (art. 18 RGPD)</li>
+        <li>Droit d’opposition (art. 21 RGPD)</li>
+        <li>Droit à la portabilité des données (art. 20 RGPD)</li>
+        <li>Droit d’introduire une réclamation auprès d’une autorité de contrôle (art. 13, par. 2, let. d RGPD)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>7. Obligation de fournir des données</h3>
+      <p>La saisie d’un nom de joueur est facultative, mais elle est nécessaire pour utiliser les fonctions de jeu de l’application. Sans saisie d’un nom (quelconque), il n’est pas possible de lancer une partie. L’utilisation d’un pseudonyme ou d’un alias est toujours possible ; il n’est pas obligatoire d’indiquer un nom réel.</p>
+    </div>
+
+    <div class="section">
+      <h3>8. Décision automatisée / profilage</h3>
+      <p>Aucune prise de décision automatisée au sens de l’art. 22 RGPD n’a lieu dans l’application. Aucun profilage n’est effectué.</p>
+    </div>
+  </div>
+
+<script>
+  const deBtn = document.getElementById("de-btn");
+  const enBtn = document.getElementById("en-btn");
+  const frBtn = document.getElementById("fr-btn");
+  const deContent = document.getElementById("de");
+  const enContent = document.getElementById("en");
+  const frContent = document.getElementById("fr");
+
+  function activate(lang) {
+    // Buttons
+    deBtn.classList.toggle("active", lang === "de");
+    enBtn.classList.toggle("active", lang === "en");
+    frBtn.classList.toggle("active", lang === "fr");
+    deBtn.setAttribute("aria-selected", (lang === "de").toString());
+    enBtn.setAttribute("aria-selected", (lang === "en").toString());
+    frBtn.setAttribute("aria-selected", (lang === "fr").toString());
+
+    // Inhalte
+    deContent.classList.toggle("active", lang === "de");
+    enContent.classList.toggle("active", lang === "en");
+    frContent.classList.toggle("active", lang === "fr");
+
+    // <html lang="..."> setzen (hilft SEO/Screenreadern)
+    document.documentElement.lang = lang;
+  }
+
+  // Klick-Handler
+  deBtn.addEventListener("click", () => activate("de"));
+  enBtn.addEventListener("click", () => activate("en"));
+  frBtn.addEventListener("click", () => activate("fr"));
+
+  // Sprach-Erkennung + Fallback EN
+  function detectPreferredLang() {
+    const supported = new Set(["de", "en", "fr"]);
+    const prefs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "en"])
+      .map(l => (typeof l === "string" ? l.toLowerCase() : "en"));
+
+    for (const code of prefs) {
+      // "de-CH" -> "de"
+      const base = code.split("-")[0];
+      if (supported.has(base)) return base;
+    }
+    return "en"; // Default
+  }
+
+  // Beim Laden aktivieren
+  document.addEventListener("DOMContentLoaded", () => {
+    const lang = detectPreferredLang();
+    activate(lang);
+  });
+</script>
+
 </body>
 </html>
