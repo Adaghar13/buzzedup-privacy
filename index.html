@@ -20,13 +20,13 @@
   </style>
 </head>
 <body>
-  <h1>BuzzedUP – Datenschutzerklärung / Privacy Policy</h1>
+  <h1>BuzzedUP – Datenschutzerklärung / Privacy Policy / Politique de confidentialité</h1>
 
   <div class="lang-switch" role="tablist" aria-label="Language switch">
-  <button id="de-btn" class="active" role="tab" aria-selected="true" aria-controls="de">Deutsch 🇩🇪</button>
-  <button id="en-btn" role="tab" aria-selected="false" aria-controls="en">English 🇬🇧</button>
-  <button id="fr-btn" role="tab" aria-selected="false" aria-controls="fr">Français 🇫🇷</button>
-</div>
+    <button id="de-btn" class="active" role="tab" aria-selected="true" aria-controls="de">Deutsch 🇩🇪</button>
+    <button id="en-btn" role="tab" aria-selected="false" aria-controls="en">English 🇬🇧</button>
+    <button id="fr-btn" role="tab" aria-selected="false" aria-controls="fr">Français 🇫🇷</button>
+  </div>
 
   <!-- Deutsch -->
   <div id="de" class="content active" role="tabpanel" aria-labelledby="de-btn">
@@ -186,26 +186,7 @@ Email: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
     </div>
   </div>
 
-  <script>
-    const deBtn = document.getElementById("de-btn");
-    const enBtn = document.getElementById("en-btn");
-    const deContent = document.getElementById("de");
-    const enContent = document.getElementById("en");
-
-    function activate(lang) {
-      const isDE = lang === "de";
-      deBtn.classList.toggle("active", isDE);
-      enBtn.classList.toggle("active", !isDE);
-      deBtn.setAttribute("aria-selected", isDE.toString());
-      enBtn.setAttribute("aria-selected", (!isDE).toString());
-      deContent.classList.toggle("active", isDE);
-      enContent.classList.toggle("active", !isDE);
-    }
-
-    deBtn.addEventListener("click", () => activate("de"));
-    enBtn.addEventListener("click", () => activate("en"));
-  </script>
- <!-- Français -->
+  <!-- Français -->
   <div id="fr" class="content" role="tabpanel" aria-labelledby="fr-btn">
     <h2>Mentions légales</h2>
     <p class="mono">
@@ -284,57 +265,54 @@ E-Mail : <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
     </div>
   </div>
 
-<script>
-  const deBtn = document.getElementById("de-btn");
-  const enBtn = document.getElementById("en-btn");
-  const frBtn = document.getElementById("fr-btn");
-  const deContent = document.getElementById("de");
-  const enContent = document.getElementById("en");
-  const frContent = document.getElementById("fr");
+  <script>
+    const deBtn = document.getElementById("de-btn");
+    const enBtn = document.getElementById("en-btn");
+    const frBtn = document.getElementById("fr-btn");
+    const deContent = document.getElementById("de");
+    const enContent = document.getElementById("en");
+    const frContent = document.getElementById("fr");
 
-  function activate(lang) {
-    // Buttons
-    deBtn.classList.toggle("active", lang === "de");
-    enBtn.classList.toggle("active", lang === "en");
-    frBtn.classList.toggle("active", lang === "fr");
-    deBtn.setAttribute("aria-selected", (lang === "de").toString());
-    enBtn.setAttribute("aria-selected", (lang === "en").toString());
-    frBtn.setAttribute("aria-selected", (lang === "fr").toString());
+    function activate(lang) {
+      // Buttons
+      deBtn.classList.toggle("active", lang === "de");
+      enBtn.classList.toggle("active", lang === "en");
+      frBtn.classList.toggle("active", lang === "fr");
+      deBtn.setAttribute("aria-selected", (lang === "de").toString());
+      enBtn.setAttribute("aria-selected", (lang === "en").toString());
+      frBtn.setAttribute("aria-selected", (lang === "fr").toString());
 
-    // Inhalte
-    deContent.classList.toggle("active", lang === "de");
-    enContent.classList.toggle("active", lang === "en");
-    frContent.classList.toggle("active", lang === "fr");
+      // Inhalte
+      deContent.classList.toggle("active", lang === "de");
+      enContent.classList.toggle("active", lang === "en");
+      frContent.classList.toggle("active", lang === "fr");
 
-    // <html lang="..."> setzen (hilft SEO/Screenreadern)
-    document.documentElement.lang = lang;
-  }
-
-  // Klick-Handler
-  deBtn.addEventListener("click", () => activate("de"));
-  enBtn.addEventListener("click", () => activate("en"));
-  frBtn.addEventListener("click", () => activate("fr"));
-
-  // Sprach-Erkennung + Fallback EN
-  function detectPreferredLang() {
-    const supported = new Set(["de", "en", "fr"]);
-    const prefs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "en"])
-      .map(l => (typeof l === "string" ? l.toLowerCase() : "en"));
-
-    for (const code of prefs) {
-      // "de-CH" -> "de"
-      const base = code.split("-")[0];
-      if (supported.has(base)) return base;
+      // <html lang="...">
+      document.documentElement.lang = lang;
     }
-    return "en"; // Default
-  }
 
-  // Beim Laden aktivieren
-  document.addEventListener("DOMContentLoaded", () => {
-    const lang = detectPreferredLang();
-    activate(lang);
-  });
-</script>
+    // Klick-Handler
+    deBtn.addEventListener("click", () => activate("de"));
+    enBtn.addEventListener("click", () => activate("en"));
+    frBtn.addEventListener("click", () => activate("fr"));
 
+    // Sprach-Erkennung + Fallback EN
+    function detectPreferredLang() {
+      const supported = new Set(["de", "en", "fr"]);
+      const prefs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "en"])
+        .map(l => (typeof l === "string" ? l.toLowerCase() : "en"));
+
+      for (const code of prefs) {
+        const base = code.split("-")[0]; // "de-CH" -> "de"
+        if (supported.has(base)) return base;
+      }
+      return "en"; // Default
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const lang = detectPreferredLang();
+      activate(lang);
+    });
+  </script>
 </body>
 </html>
