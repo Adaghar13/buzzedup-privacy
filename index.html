@@ -208,6 +208,26 @@
     <h1>Privacy Notice pursuant to Art. 13 GDPR</h1>
 
 
+    <h2>Imprint</h2>
+
+    <p class="address">
+Information pursuant to Section 5 of the German Digital Services Act (DDG):
+
+Alexander Fabritus
+c/o flexdienst – #11224
+Kurt-Schumacher-Straße 76
+67663 Kaiserslautern
+Germany
+    </p>
+
+    <p>
+      Email:
+      <a href="mailto:afabritius@gmx.de">
+        afabritius@gmx.de
+      </a>
+    </p>
+
+
     <h2>1. Controller within the meaning of the GDPR</h2>
 
     <p class="address">
@@ -442,6 +462,26 @@ Germany
   >
 
     <h1>Datenschutzerklärung gem. Art. 13 DSGVO</h1>
+
+
+    <h2>Impressum</h2>
+
+    <p class="address">
+Angaben gemäß § 5 Digitale-Dienste-Gesetz (DDG):
+
+Alexander Fabritus
+c/o flexdienst – #11224
+Kurt-Schumacher-Straße 76
+67663 Kaiserslautern
+Deutschland
+    </p>
+
+    <p>
+      E-Mail:
+      <a href="mailto:afabritius@gmx.de">
+        afabritius@gmx.de
+      </a>
+    </p>
 
 
     <h2>1. Verantwortlicher im Sinne der DSGVO</h2>
@@ -692,6 +732,26 @@ Deutschland
     <h1>Informations sur la protection des données conformément à l'art. 13 RGPD</h1>
 
 
+    <h2>Mentions légales</h2>
+
+    <p class="address">
+Informations conformément à l'article 5 de la loi allemande sur les services numériques (DDG) :
+
+Alexander Fabritus
+c/o flexdienst – #11224
+Kurt-Schumacher-Straße 76
+67663 Kaiserslautern
+Allemagne
+    </p>
+
+    <p>
+      E-mail :
+      <a href="mailto:afabritius@gmx.de">
+        afabritius@gmx.de
+      </a>
+    </p>
+
+
     <h2>1. Responsable du traitement au sens du RGPD</h2>
 
     <p class="address">
@@ -936,6 +996,26 @@ Allemagne
     <h1>Información de protección de datos conforme al art. 13 RGPD</h1>
 
 
+    <h2>Aviso legal</h2>
+
+    <p class="address">
+Información de conformidad con el § 5 de la Ley alemana de Servicios Digitales (DDG):
+
+Alexander Fabritus
+c/o flexdienst – #11224
+Kurt-Schumacher-Straße 76
+67663 Kaiserslautern
+Alemania
+    </p>
+
+    <p>
+      Correo electrónico:
+      <a href="mailto:afabritius@gmx.de">
+        afabritius@gmx.de
+      </a>
+    </p>
+
+
     <h2>1. Responsable del tratamiento en el sentido del RGPD</h2>
 
     <p class="address">
@@ -1175,6 +1255,26 @@ Alemania
     <h1>Informações sobre proteção de dados nos termos do art. 13 do RGPD</h1>
 
 
+    <h2>Informações legais</h2>
+
+    <p class="address">
+Informações nos termos do § 5 da Lei Alemã dos Serviços Digitais (DDG):
+
+Alexander Fabritus
+c/o flexdienst – #11224
+Kurt-Schumacher-Straße 76
+67663 Kaiserslautern
+Alemanha
+    </p>
+
+    <p>
+      E-mail:
+      <a href="mailto:afabritius@gmx.de">
+        afabritius@gmx.de
+      </a>
+    </p>
+
+
     <h2>1. Responsável pelo tratamento na aceção do RGPD</h2>
 
     <p class="address">
@@ -1410,6 +1510,26 @@ Alemanha
   >
 
     <h1>Informativa sulla protezione dei dati ai sensi dell'art. 13 GDPR</h1>
+
+
+    <h2>Note legali</h2>
+
+    <p class="address">
+Informazioni ai sensi del § 5 della legge tedesca sui servizi digitali (DDG):
+
+Alexander Fabritus
+c/o flexdienst – #11224
+Kurt-Schumacher-Straße 76
+67663 Kaiserslautern
+Germania
+    </p>
+
+    <p>
+      E-mail:
+      <a href="mailto:afabritius@gmx.de">
+        afabritius@gmx.de
+      </a>
+    </p>
 
 
     <h2>1. Titolare del trattamento ai sensi del GDPR</h2>
@@ -1660,10 +1780,6 @@ Germania
     };
 
 
-    /**
-     * Activates the requested language.
-     * Unsupported languages automatically fall back to English.
-     */
     function activateLanguage(language) {
 
       const lang = supportedLanguages.includes(language)
@@ -1671,9 +1787,6 @@ Germania
         : fallbackLanguage;
 
 
-      /*
-       * Language buttons
-       */
       document
         .querySelectorAll(".lang-switch button")
         .forEach((button) => {
@@ -1696,9 +1809,6 @@ Germania
         });
 
 
-      /*
-       * Language content
-       */
       document
         .querySelectorAll(".content")
         .forEach((content) => {
@@ -1711,47 +1821,15 @@ Germania
         });
 
 
-      /*
-       * Update document language
-       */
       document.documentElement.lang = lang;
 
 
-      /*
-       * Update browser title
-       */
       document.title =
         pageTitles[lang] ||
         pageTitles[fallbackLanguage];
     }
 
 
-    /**
-     * Detect preferred browser language.
-     *
-     * Examples:
-     *
-     * de-DE -> de
-     * de-AT -> de
-     * de-CH -> de
-     *
-     * en-US -> en
-     * en-GB -> en
-     *
-     * fr-FR -> fr
-     * fr-CH -> fr
-     * fr-CA -> fr
-     *
-     * es-ES -> es
-     * es-MX -> es
-     *
-     * pt-PT -> pt
-     * pt-BR -> pt
-     *
-     * it-IT -> it
-     *
-     * Unsupported language -> en
-     */
     function detectPreferredLanguage() {
 
       const browserLanguages =
@@ -1793,12 +1871,6 @@ Germania
     }
 
 
-    /*
-     * Manual language switching.
-     *
-     * No cookie, localStorage or other persistent
-     * storage is used.
-     */
     document
       .querySelectorAll(".lang-switch button")
       .forEach((button) => {
@@ -1815,9 +1887,6 @@ Germania
       });
 
 
-    /*
-     * Automatic browser language detection.
-     */
     document.addEventListener(
       "DOMContentLoaded",
       () => {
