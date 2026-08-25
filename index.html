@@ -2,86 +2,129 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Privacy Policy - BuzzedUP</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Privacy Notice pursuant to Art. 13 GDPR</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       margin: 40px;
-      line-height: 1.6;
+      line-height: 1.65;
       color: #222;
+      background: #fff;
     }
 
     h1 {
       color: #c62828;
+      margin-top: 0;
+      line-height: 1.25;
     }
 
     h2 {
-      margin-top: 30px;
+      margin-top: 32px;
+    }
+
+    h3 {
+      margin-top: 26px;
+    }
+
+    a {
+      color: #c62828;
+      word-break: break-word;
+    }
+
+    ul {
+      padding-left: 22px;
     }
 
     .lang-switch {
-      margin-bottom: 20px;
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
+      margin-bottom: 30px;
     }
 
     .lang-switch button {
-      padding: 8px 14px;
-      cursor: pointer;
-      border: none;
+      border: 0;
       border-radius: 4px;
       background: #eee;
+      color: #111;
+      cursor: pointer;
+      padding: 9px 14px;
+      font-size: 14px;
+    }
+
+    .lang-switch button:hover {
+      background: #ddd;
     }
 
     .lang-switch button.active {
       background: #c62828;
-      color: white;
+      color: #fff;
+    }
+
+    .lang-switch button:focus-visible {
+      outline: 3px solid #333;
+      outline-offset: 2px;
     }
 
     .content {
       display: none;
+      max-width: 1000px;
     }
 
     .content.active {
       display: block;
     }
 
-    .language-note {
-      padding: 10px 14px;
-      margin: 15px 0 25px;
-      background: #f5f5f5;
-      border-left: 4px solid #c62828;
-    }
-
-    a {
-      color: #c62828;
-    }
-
-    ul {
-      margin: 0;
-      padding-left: 20px;
+    .address {
+      white-space: pre-line;
     }
 
     .section {
-      margin-top: 18px;
+      margin-top: 20px;
     }
 
-    .mono {
-      white-space: pre-line;
+    @media (max-width: 700px) {
+      body {
+        margin: 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .lang-switch button {
+        padding: 8px 11px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <div class="lang-switch" role="tablist" aria-label="Language selection">
+  <!-- ====================================================== -->
+  <!-- LANGUAGE SWITCH -->
+  <!-- ====================================================== -->
+
+  <nav
+    class="lang-switch"
+    role="tablist"
+    aria-label="Language selection"
+  >
 
     <button
       id="en-btn"
+      type="button"
       class="active"
       role="tab"
       aria-selected="true"
@@ -93,6 +136,7 @@
 
     <button
       id="de-btn"
+      type="button"
       role="tab"
       aria-selected="false"
       aria-controls="de"
@@ -103,6 +147,7 @@
 
     <button
       id="fr-btn"
+      type="button"
       role="tab"
       aria-selected="false"
       aria-controls="fr"
@@ -113,6 +158,7 @@
 
     <button
       id="es-btn"
+      type="button"
       role="tab"
       aria-selected="false"
       aria-controls="es"
@@ -123,6 +169,7 @@
 
     <button
       id="pt-btn"
+      type="button"
       role="tab"
       aria-selected="false"
       aria-controls="pt"
@@ -133,6 +180,7 @@
 
     <button
       id="it-btn"
+      type="button"
       role="tab"
       aria-selected="false"
       aria-controls="it"
@@ -141,57 +189,67 @@
       Italiano 🇮🇹
     </button>
 
-  </div>
+  </nav>
 
 
-  <!-- ========================================================= -->
-  <!-- ENGLISH - DEFAULT -->
-  <!-- ========================================================= -->
+  <!-- ====================================================== -->
+  <!-- ENGLISH -->
+  <!-- Default / fallback -->
+  <!-- ====================================================== -->
 
   <main
     id="en"
     class="content active"
     role="tabpanel"
     aria-labelledby="en-btn"
+    lang="en"
   >
 
-    <h1>BuzzedUP – Privacy Policy</h1>
+    <h1>Privacy Notice pursuant to Art. 13 GDPR</h1>
 
-    <div class="language-note">
-      In the event of any discrepancies between the translations,
-      the German version shall prevail.
-    </div>
 
-    <h2>Imprint</h2>
+    <h2>1. Controller within the meaning of the GDPR</h2>
 
-    <p class="mono">
-Information pursuant to Section 5 of the German Digital Services Act (DDG):
-
+    <p class="address">
 Alexander Fabritus
 c/o flexdienst – #11224
 Kurt-Schumacher-Straße 76
 67663 Kaiserslautern
 Germany
+    </p>
 
-Email: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
+    <p>
+      Email:
+      <a href="mailto:afabritius@gmx.de">
+        afabritius@gmx.de
+      </a>
     </p>
 
 
-    <h2>Privacy Information pursuant to Art. 13 GDPR</h2>
+    <h2>2. Processing of personal data</h2>
 
 
     <div class="section">
 
-      <h3>1. Controller within the meaning of the GDPR</h3>
+      <h3>2.1 Use of the app</h3>
 
-      <p class="mono">
-Alexander Fabritus
-c/o flexdienst – #11224
-Kurt-Schumacher-Straße 76
-67663 Kaiserslautern
-Germany
+      <p>
+        In connection with the use of the app, the provider does not
+        process any personal data. The app runs locally on the device
+        being used.
+      </p>
 
-Email: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
+      <p>
+        Player names that users may enter are stored exclusively locally
+        and temporarily in the working memory (RAM) of the device being
+        used. The provider does not store, transmit or otherwise process
+        this data.
+      </p>
+
+      <p>
+        The provider has no access to this data at any time.
+        All entries remain exclusively on the respective device
+        of the user.
       </p>
 
     </div>
@@ -199,82 +257,44 @@ Email: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
 
     <div class="section">
 
-      <h3>2. Processing of personal data in the app</h3>
+      <h3>2.2 Provision of this website via GitHub Pages</h3>
 
       <p>
-        The app does not process any personal data.
-        Player names entered by users are stored exclusively locally
-        and temporarily in the working memory (RAM) of the device being used.
-        No storage, transmission or other processing of this data takes place.
+        This website is provided via GitHub Pages, a service
+        of GitHub, Inc.
       </p>
 
       <p>
-        The provider has no access to this data at any time – either technically
-        or legally. All entries remain exclusively on the respective user's device.
-      </p>
-
-    </div>
-
-
-    <div class="section">
-
-      <h3>3. Purpose and legal basis of data processing</h3>
-
-      <p>
-        The entry of a player name serves exclusively to identify the game
-        participants during an active game session.
-      </p>
-
-    </div>
-
-
-    <div class="section">
-
-      <h3>4. Duration of storage</h3>
-
-      <p>
-        The entered data (player names) are stored exclusively for the duration
-        of the respective game session in the user's RAM and are completely
-        deleted when the app is terminated or restarted.
-        No storage takes place.
-      </p>
-
-    </div>
-
-
-    <div class="section">
-
-      <h3>5. Communication with us</h3>
-
-      <p>
-        If you communicate with us via a contact form, by email or through
-        another channel, we process your personal data in order to handle your
-        request. Please note that unencrypted communication by email is insecure.
-        It cannot be ruled out that data transmitted in this way may be read,
-        copied, altered or deleted by unauthorized persons.
+        According to GitHub, when a website provided via GitHub Pages
+        is accessed, the visitor's IP address is logged and stored
+        for security purposes.
       </p>
 
       <p>
-        The personal data that you provide as part of contacting us by email
-        are processed solely for the purpose of handling your request.
-        Disclosure to third parties only takes place if this is necessary
-        for the purpose of processing your contact request.
+        According to its own information, GitHub also processes personal
+        data in the United States and other countries. For international
+        data transfers, GitHub states that it uses, among other mechanisms,
+        the Standard Contractual Clauses adopted by the European Commission
+        and participates in the EU-U.S. Data Privacy Framework.
       </p>
 
       <p>
-        The legal basis for this is Art. 6 (1) lit. b GDPR if your request
-        relates to the performance of a contract or is necessary for the
-        implementation of pre-contractual measures. In all other cases,
-        the legal basis is our legitimate interest in effectively handling
-        enquiries addressed to us pursuant to Art. 6 (1) lit. f GDPR.
-        Where statutory retention obligations exist, the legal basis is
-        Art. 6 (1) lit. c GDPR.
+        GitHub Pages is used for the secure and technically reliable
+        provision of this website. The legal basis is Art. 6(1)(f) GDPR.
+        The legitimate interest lies in the secure and reliable provision
+        of the privacy information.
       </p>
 
       <p>
-        Your personal data will be deleted when they are no longer required
-        for the purpose of your contact request. Please note that your messages
-        may have to be retained where statutory retention obligations apply.
+        Further information about the processing of personal data by
+        GitHub can be found in GitHub's privacy statement:
+        <a
+          href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub General Privacy Statement
+        </a>.
       </p>
 
     </div>
@@ -282,99 +302,191 @@ Email: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
 
     <div class="section">
 
-      <h3>6. Rights of data subjects</h3>
+      <h3>2.3 Automatic browser language detection</h3>
 
       <p>
-        You have the following rights under the General Data Protection
-        Regulation (GDPR):
+        To automatically select the appropriate language version,
+        the preferred language configured in the browser is read locally
+        using the browser functions provided for this purpose.
       </p>
 
-      <ul>
-        <li>Right of access (Art. 15 GDPR)</li>
-        <li>Right to rectification (Art. 16 GDPR)</li>
-        <li>Right to erasure (Art. 17 GDPR)</li>
-        <li>Right to restriction of processing (Art. 18 GDPR)</li>
-        <li>Right to object to processing (Art. 21 GDPR)</li>
-        <li>Right to data portability (Art. 20 GDPR)</li>
-        <li>
-          Right to lodge a complaint with a supervisory authority
-          (Art. 13 (2) lit. d GDPR)
-        </li>
-      </ul>
+      <p>
+        Automatic language selection takes place exclusively on the
+        device being used and within the browser. This function does
+        not transmit any data to the provider and does not permanently
+        store any data.
+      </p>
+
+      <p>
+        If none of the available languages is detected,
+        the English language version is displayed.
+      </p>
 
     </div>
 
 
     <div class="section">
 
-      <h3>7. Obligation to provide personal data</h3>
+      <h3>2.4 Contacting us</h3>
 
-      <p>There is no obligation to provide personal data.</p>
+      <p>
+        If you contact us by email or through another communication
+        channel, we process your personal data in order to handle
+        your request.
+      </p>
+
+      <p>
+        Please note that unencrypted communication by email is insecure.
+        It cannot be ruled out that data transmitted in this way may
+        be read, copied, altered or deleted by unauthorized persons.
+      </p>
+
+      <p>
+        The personal data you provide as part of an email enquiry,
+        in particular your email address as well as any additional
+        information you provide, such as your first and last name,
+        address or telephone number, will only be processed for the
+        purpose of handling your request.
+      </p>
+
+      <p>
+        Data will only be transmitted to third parties insofar as this
+        is necessary to handle your request or is required by law.
+        In the context of email communication, the email and IT service
+        providers used may in particular be technical recipients
+        of the data.
+      </p>
+
+      <p>
+        The legal basis is Art. 6(1)(b) GDPR if your request relates
+        to the performance of a contract or is necessary for taking
+        steps prior to entering into a contract.
+      </p>
+
+      <p>
+        In all other cases, the legal basis is our legitimate interest
+        in effectively handling enquiries addressed to us pursuant
+        to Art. 6(1)(f) GDPR.
+      </p>
+
+      <p>
+        Where statutory retention obligations apply, the legal basis
+        is Art. 6(1)(c) GDPR.
+      </p>
+
+      <p>
+        Data processed in connection with contacting us will be deleted
+        as soon as the respective enquiry has been conclusively handled
+        and there are no statutory retention obligations or other
+        legitimate reasons for further storage.
+      </p>
+
+      <p>
+        Where statutory retention obligations apply, the relevant data
+        will be stored for the duration of the applicable statutory
+        retention period and deleted thereafter.
+      </p>
 
     </div>
 
 
     <div class="section">
 
-      <h3>8. Automated decision-making / profiling</h3>
+      <h3>2.5 Automated decision-making / profiling</h3>
 
       <p>
         No automated decision-making within the meaning of Art. 22 GDPR
-        takes place in the app. No profiling takes place.
+        takes place. No profiling takes place.
+      </p>
+
+      <p>
+        There is no obligation to provide personal data.
       </p>
 
     </div>
+
+
+    <h2>3. Rights of data subjects</h2>
+
+    <p>
+      You have the following rights under the General Data Protection
+      Regulation (GDPR):
+    </p>
+
+    <ul>
+      <li>Right of access (Art. 15 GDPR)</li>
+      <li>Right to rectification (Art. 16 GDPR)</li>
+      <li>Right to erasure (Art. 17 GDPR)</li>
+      <li>Right to restriction of processing (Art. 18 GDPR)</li>
+      <li>Right to object to processing (Art. 21 GDPR)</li>
+      <li>Right to data portability (Art. 20 GDPR)</li>
+      <li>
+        Right to lodge a complaint with a data protection supervisory
+        authority (Art. 77 GDPR)
+      </li>
+    </ul>
 
   </main>
 
 
-  <!-- ========================================================= -->
-  <!-- DEUTSCH - MASSGEBLICHE FASSUNG -->
-  <!-- ========================================================= -->
+  <!-- ====================================================== -->
+  <!-- DEUTSCH -->
+  <!-- ====================================================== -->
 
   <main
     id="de"
     class="content"
     role="tabpanel"
     aria-labelledby="de-btn"
+    lang="de"
   >
 
-    <h1>BuzzedUP – Datenschutzerklärung</h1>
+    <h1>Datenschutzerklärung gem. Art. 13 DSGVO</h1>
 
-    <div class="language-note">
-      Bei Abweichungen zwischen den Übersetzungen ist die deutsche Fassung maßgeblich.
-    </div>
 
-    <h2>Impressum</h2>
+    <h2>1. Verantwortlicher im Sinne der DSGVO</h2>
 
-    <p class="mono">
-Angabe gemäß § 5 Digitale-Dienste-Gesetz (DDG):
-
+    <p class="address">
 Alexander Fabritus
 c/o flexdienst – #11224
 Kurt-Schumacher-Straße 76
 67663 Kaiserslautern
 Deutschland
+    </p>
 
-E-Mail: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
+    <p>
+      E-Mail:
+      <a href="mailto:afabritius@gmx.de">
+        afabritius@gmx.de
+      </a>
     </p>
 
 
-    <h2>Datenschutzinformationen gemäß Art. 13 DSGVO</h2>
+    <h2>2. Verarbeitung personenbezogener Daten</h2>
 
 
     <div class="section">
 
-      <h3>1. Verantwortlicher im Sinne der DSGVO</h3>
+      <h3>2.1 Nutzung der App</h3>
 
-      <p class="mono">
-Alexander Fabritus
-c/o flexdienst – #11224
-Kurt-Schumacher-Straße 76
-67663 Kaiserslautern
-Deutschland
+      <p>
+        Im Rahmen der Nutzung der App verarbeitet der Anbieter keine
+        personenbezogenen Daten. Die App läuft lokal auf dem verwendeten
+        Endgerät.
+      </p>
 
-E-Mail: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
+      <p>
+        Von Nutzerinnen und Nutzern ggf. eingegebene Spielernamen werden
+        ausschließlich lokal und temporär im Arbeitsspeicher (RAM) des
+        verwendeten Endgeräts gespeichert. Eine Speicherung, Übermittlung
+        oder sonstige Verarbeitung dieser Daten durch den Anbieter findet
+        nicht statt.
+      </p>
+
+      <p>
+        Der Anbieter hat zu keinem Zeitpunkt Zugriff auf diese Daten.
+        Sämtliche Eingaben verbleiben ausschließlich auf dem jeweiligen
+        Endgerät der Nutzerin bzw. des Nutzers.
       </p>
 
     </div>
@@ -382,87 +494,46 @@ E-Mail: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
 
     <div class="section">
 
-      <h3>2. Verarbeitung personenbezogener Daten in der App</h3>
+      <h3>2.2 Bereitstellung dieser Webseite über GitHub Pages</h3>
 
       <p>
-        Die App verarbeitet keine personenbezogenen Daten.
-        Von Nutzerinnen und Nutzern eingegebene Spielernamen werden
-        ausschließlich lokal und temporär im Arbeitsspeicher (RAM)
-        des verwendeten Endgeräts gespeichert.
-        Eine Speicherung, Übermittlung oder sonstige Verarbeitung
-        dieser Daten findet nicht statt.
+        Diese Webseite wird über GitHub Pages, einen Dienst der
+        GitHub, Inc., bereitgestellt.
       </p>
 
       <p>
-        Der Anbieter hat zu keinem Zeitpunkt Zugriff auf diese Daten –
-        weder technisch noch rechtlich. Sämtliche Eingaben verbleiben
-        ausschließlich auf dem jeweiligen Endgerät der Nutzerin bzw. des Nutzers.
-      </p>
-
-    </div>
-
-
-    <div class="section">
-
-      <h3>3. Zweck und Rechtsgrundlage der Datenverarbeitung</h3>
-
-      <p>
-        Die Eingabe eines Spielernamens dient ausschließlich der Identifikation
-        der Spielteilnehmenden während einer laufenden Spielsitzung.
-      </p>
-
-    </div>
-
-
-    <div class="section">
-
-      <h3>4. Dauer der Speicherung</h3>
-
-      <p>
-        Die eingegebenen Daten (Spielernamen) werden ausschließlich für die
-        Dauer der jeweiligen Spielsitzung im RAM des Nutzers gespeichert
-        und mit Beendigung oder Neustart der App vollständig gelöscht.
-        Eine Speicherung erfolgt nicht.
-      </p>
-
-    </div>
-
-
-    <div class="section">
-
-      <h3>5. Kommunikation mit uns</h3>
-
-      <p>
-        Soweit Sie mit uns über ein Kontaktformular, per E-Mail oder einen
-        anderen Kanal kommunizieren, verarbeiten wir Ihre personenbezogenen
-        Daten zur Bearbeitung Ihrer Anfrage. Bitte beachten Sie dabei,
-        dass eine unverschlüsselte Kommunikation mittels E-Mail unsicher ist.
-        Es kann nicht ausgeschlossen werden, dass auf diesem Wege übermittelte
-        Daten von Unbefugten gelesen, kopiert, verändert oder gelöscht werden.
+        Beim Aufruf einer über GitHub Pages bereitgestellten Webseite
+        wird nach Angaben von GitHub die IP-Adresse der Besucherin bzw.
+        des Besuchers zu Sicherheitszwecken protokolliert und gespeichert.
       </p>
 
       <p>
-        Die personenbezogenen Daten, die Sie aufgrund einer Kontaktaufnahme
-        über eine E-Mail-Anfrage angeben, werden nur für den Zweck der Bearbeitung
-        Ihrer Anfrage verarbeitet. Eine Weitergabe an Dritte findet nur statt,
-        wenn dies für den Zweck der Bearbeitung dieser Kontaktaufnahme erforderlich ist.
+        GitHub verarbeitet personenbezogene Daten nach eigenen Angaben
+        auch in den Vereinigten Staaten und anderen Ländern. Für
+        internationale Datenübermittlungen verwendet GitHub nach eigenen
+        Angaben unter anderem die von der Europäischen Kommission
+        verabschiedeten Standardvertragsklauseln und nimmt am
+        EU-U.S. Data Privacy Framework teil.
       </p>
 
       <p>
-        Rechtsgrundlage hierfür ist Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage
-        mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung
-        vorvertraglicher Maßnahmen erforderlich ist. Rechtsgrundlage in allen
-        übrigen Fällen ist unser berechtigtes Interesse an der effektiven Bearbeitung
-        der an uns gerichteten Anfragen nach Art. 6 Abs. 1 lit. f DSGVO.
-        Sofern gesetzliche Aufbewahrungspflichten bestehen, ist die Rechtsgrundlage
-        Art. 6 Abs. 1 lit. c DSGVO.
+        Die Nutzung von GitHub Pages erfolgt zur sicheren und technisch
+        zuverlässigen Bereitstellung dieser Webseite. Rechtsgrundlage
+        hierfür ist Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse
+        liegt in der sicheren und zuverlässigen Bereitstellung der
+        Datenschutzinformationen.
       </p>
 
       <p>
-        Ihre personenbezogenen Daten werden gelöscht, wenn diese zur Zweckerfüllung
-        Ihrer Kontaktaufnahme nicht mehr erforderlich sind. Wir weisen darauf hin,
-        dass Ihre Nachrichten gegebenenfalls im Rahmen gesetzlich bestehender
-        Aufbewahrungspflichten aufbewahrt werden müssen.
+        Weitere Informationen zur Verarbeitung personenbezogener Daten
+        durch GitHub finden Sie in der Datenschutzerklärung von GitHub:
+        <a
+          href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Allgemeine Datenschutzerklärung von GitHub
+        </a>.
       </p>
 
     </div>
@@ -470,100 +541,200 @@ E-Mail: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
 
     <div class="section">
 
-      <h3>6. Rechte der betroffenen Personen</h3>
+      <h3>2.3 Automatische Browser-Spracherkennung</h3>
 
       <p>
-        Es stehen Ihnen folgende Rechte nach der Datenschutz-Grundverordnung (DSGVO) zu:
+        Zur automatischen Auswahl der passenden Sprachversion wird die
+        im Browser eingestellte bevorzugte Sprache lokal über die hierfür
+        vorgesehenen Browserfunktionen ausgelesen.
       </p>
 
-      <ul>
-        <li>Recht auf Auskunft (Art. 15 DSGVO)</li>
-        <li>Recht auf Berichtigung (Art. 16 DSGVO)</li>
-        <li>Recht auf Löschung (Art. 17 DSGVO)</li>
-        <li>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
-        <li>Recht auf Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li>
-        <li>Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</li>
-        <li>
-          Beschwerderecht bei einer Aufsichtsbehörde
-          (Art. 13 Abs. 2 lit. d DSGVO)
-        </li>
-      </ul>
+      <p>
+        Die automatische Sprachauswahl erfolgt ausschließlich auf dem
+        verwendeten Endgerät im Browser. Durch diese Funktion werden
+        keine Daten an den Anbieter übermittelt oder dauerhaft gespeichert.
+      </p>
+
+      <p>
+        Wird keine der angebotenen Sprachen erkannt, wird die englische
+        Sprachversion angezeigt.
+      </p>
 
     </div>
 
 
     <div class="section">
 
-      <h3>7. Pflicht zur Bereitstellung personenbezogener Daten</h3>
+      <h3>2.4 Kontaktaufnahme</h3>
 
-      <p>Eine Pflicht besteht nicht.</p>
+      <p>
+        Soweit Sie uns per E-Mail oder über einen anderen
+        Kommunikationskanal kontaktieren, verarbeiten wir Ihre
+        personenbezogenen Daten zur Bearbeitung Ihrer Anfrage.
+      </p>
+
+      <p>
+        Bitte beachten Sie dabei, dass eine unverschlüsselte Kommunikation
+        mittels E-Mail unsicher ist. Es kann nicht ausgeschlossen werden,
+        dass auf diesem Wege übermittelte Daten von Unbefugten gelesen,
+        kopiert, verändert oder gelöscht werden.
+      </p>
+
+      <p>
+        Die personenbezogenen Daten, die Sie im Rahmen einer E-Mail-Anfrage
+        angeben, insbesondere Ihre E-Mail-Adresse sowie die von Ihnen
+        zusätzlich mitgeteilten Angaben, z. B. Vor- und Nachname, Anschrift
+        oder Telefonnummer, werden nur für den Zweck der Bearbeitung Ihrer
+        Anfrage verarbeitet.
+      </p>
+
+      <p>
+        Eine Übermittlung an Dritte erfolgt nur, soweit dies zur Bearbeitung
+        Ihrer Anfrage oder aufgrund gesetzlicher Verpflichtungen erforderlich
+        ist. Im Rahmen der E-Mail-Kommunikation können insbesondere die
+        eingesetzten E-Mail- und IT-Dienstleister technische Empfänger
+        der Daten sein.
+      </p>
+
+      <p>
+        Rechtsgrundlage hierfür ist Art. 6 Abs. 1 lit. b DSGVO, sofern
+        Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder
+        zur Durchführung vorvertraglicher Maßnahmen erforderlich ist.
+      </p>
+
+      <p>
+        Rechtsgrundlage in allen übrigen Fällen ist unser berechtigtes
+        Interesse an der effektiven Bearbeitung der an uns gerichteten
+        Anfragen nach Art. 6 Abs. 1 lit. f DSGVO.
+      </p>
+
+      <p>
+        Sofern gesetzliche Aufbewahrungspflichten bestehen, ist die
+        Rechtsgrundlage Art. 6 Abs. 1 lit. c DSGVO.
+      </p>
+
+      <p>
+        Die im Rahmen der Kontaktaufnahme verarbeiteten Daten werden
+        gelöscht, sobald die jeweilige Anfrage abschließend bearbeitet
+        wurde und keine gesetzlichen Aufbewahrungspflichten oder sonstigen
+        berechtigten Gründe für eine weitere Speicherung bestehen.
+      </p>
+
+      <p>
+        Soweit gesetzliche Aufbewahrungspflichten bestehen, werden die
+        betreffenden Daten für die Dauer der jeweils geltenden gesetzlichen
+        Aufbewahrungsfrist gespeichert und anschließend gelöscht.
+      </p>
 
     </div>
 
 
     <div class="section">
 
-      <h3>8. Automatisierte Entscheidungsfindung / Profiling</h3>
+      <h3>2.5 Automatisierte Entscheidungsfindung / Profiling</h3>
 
       <p>
-        In der App erfolgt keine automatisierte Entscheidungsfindung
-        im Sinne von Art. 22 DSGVO. Es findet kein Profiling statt.
+        Es erfolgt keine automatisierte Entscheidungsfindung im Sinne von
+        Art. 22 DSGVO. Es findet kein Profiling statt.
+      </p>
+
+      <p>
+        Eine Pflicht zur Bereitstellung personenbezogener Daten besteht nicht.
       </p>
 
     </div>
+
+
+    <h2>3. Rechte der betroffenen Personen</h2>
+
+    <p>
+      Es stehen Ihnen folgende Rechte nach der Datenschutz-Grundverordnung
+      (DSGVO) zu:
+    </p>
+
+    <ul>
+      <li>Recht auf Auskunft (Art. 15 DSGVO)</li>
+      <li>Recht auf Berichtigung (Art. 16 DSGVO)</li>
+      <li>Recht auf Löschung (Art. 17 DSGVO)</li>
+      <li>
+        Recht auf Einschränkung der Verarbeitung
+        (Art. 18 DSGVO)
+      </li>
+      <li>
+        Recht auf Widerspruch gegen die Verarbeitung
+        (Art. 21 DSGVO)
+      </li>
+      <li>
+        Recht auf Datenübertragbarkeit
+        (Art. 20 DSGVO)
+      </li>
+      <li>
+        Recht auf Beschwerde bei einer Datenschutzaufsichtsbehörde
+        (Art. 77 DSGVO)
+      </li>
+    </ul>
 
   </main>
 
 
-  <!-- ========================================================= -->
+  <!-- ====================================================== -->
   <!-- FRANÇAIS -->
-  <!-- ========================================================= -->
+  <!-- ====================================================== -->
 
   <main
     id="fr"
     class="content"
     role="tabpanel"
     aria-labelledby="fr-btn"
+    lang="fr"
   >
 
-    <h1>BuzzedUP – Politique de confidentialité</h1>
+    <h1>Informations sur la protection des données conformément à l'art. 13 RGPD</h1>
 
-    <div class="language-note">
-      En cas de divergence entre les traductions, la version allemande fait foi.
-    </div>
 
-    <h2>Mentions légales</h2>
+    <h2>1. Responsable du traitement au sens du RGPD</h2>
 
-    <p class="mono">
-Informations conformément à l’article 5 de la loi allemande sur les services numériques (DDG) :
-
+    <p class="address">
 Alexander Fabritus
 c/o flexdienst – #11224
 Kurt-Schumacher-Straße 76
 67663 Kaiserslautern
 Allemagne
+    </p>
 
-E-mail : <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
+    <p>
+      E-mail :
+      <a href="mailto:afabritius@gmx.de">
+        afabritius@gmx.de
+      </a>
     </p>
 
 
-    <h2>
-      Informations sur la protection des données conformément à l’art. 13 RGPD
-    </h2>
+    <h2>2. Traitement des données à caractère personnel</h2>
 
 
     <div class="section">
 
-      <h3>1. Responsable du traitement au sens du RGPD</h3>
+      <h3>2.1 Utilisation de l'application</h3>
 
-      <p class="mono">
-Alexander Fabritus
-c/o flexdienst – #11224
-Kurt-Schumacher-Straße 76
-67663 Kaiserslautern
-Allemagne
+      <p>
+        Dans le cadre de l'utilisation de l'application, le fournisseur
+        ne traite aucune donnée à caractère personnel. L'application
+        fonctionne localement sur l'appareil utilisé.
+      </p>
 
-E-mail : <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
+      <p>
+        Les noms de joueurs éventuellement saisis par les utilisateurs
+        sont stockés exclusivement localement et temporairement dans
+        la mémoire vive (RAM) de l'appareil utilisé. Aucun stockage,
+        transmission ou autre traitement de ces données par le
+        fournisseur n'a lieu.
+      </p>
+
+      <p>
+        Le fournisseur n'a à aucun moment accès à ces données.
+        Toutes les saisies restent exclusivement sur l'appareil
+        respectif de l'utilisateur.
       </p>
 
     </div>
@@ -571,20 +742,47 @@ E-mail : <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
 
     <div class="section">
 
-      <h3>2. Traitement des données à caractère personnel dans l’application</h3>
+      <h3>2.2 Mise à disposition de ce site web via GitHub Pages</h3>
 
       <p>
-        L’application ne traite aucune donnée à caractère personnel.
-        Les noms de joueurs saisis par les utilisateurs sont conservés
-        exclusivement localement et temporairement dans la mémoire vive (RAM)
-        de l’appareil utilisé. Aucun stockage, aucune transmission ni aucun
-        autre traitement de ces données n’a lieu.
+        Ce site web est mis à disposition via GitHub Pages,
+        un service de GitHub, Inc.
       </p>
 
       <p>
-        Le fournisseur n’a à aucun moment accès à ces données,
-        ni techniquement ni juridiquement. Toutes les saisies restent
-        exclusivement sur l’appareil de l’utilisateur concerné.
+        Selon GitHub, lorsqu'un site web mis à disposition via GitHub Pages
+        est consulté, l'adresse IP du visiteur est enregistrée et conservée
+        à des fins de sécurité.
+      </p>
+
+      <p>
+        Selon ses propres informations, GitHub traite également des données
+        à caractère personnel aux États-Unis et dans d'autres pays.
+        Pour les transferts internationaux de données, GitHub indique
+        utiliser notamment les clauses contractuelles types adoptées par
+        la Commission européenne et participer au cadre de protection
+        des données UE–États-Unis (EU-U.S. Data Privacy Framework).
+      </p>
+
+      <p>
+        GitHub Pages est utilisé afin de fournir ce site web de manière
+        sûre et techniquement fiable. La base juridique est l'art. 6,
+        par. 1, let. f RGPD. L'intérêt légitime réside dans la mise
+        à disposition sûre et fiable des informations relatives
+        à la protection des données.
+      </p>
+
+      <p>
+        Vous trouverez de plus amples informations sur le traitement
+        des données à caractère personnel par GitHub dans la déclaration
+        de confidentialité de GitHub :
+        <a
+          href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Déclaration générale de confidentialité de GitHub
+        </a>.
       </p>
 
     </div>
@@ -592,11 +790,25 @@ E-mail : <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
 
     <div class="section">
 
-      <h3>3. Finalité et base juridique du traitement des données</h3>
+      <h3>2.3 Détection automatique de la langue du navigateur</h3>
 
       <p>
-        La saisie d’un nom de joueur sert exclusivement à identifier
-        les participants pendant une session de jeu en cours.
+        Afin de sélectionner automatiquement la version linguistique
+        appropriée, la langue préférée configurée dans le navigateur
+        est lue localement au moyen des fonctions du navigateur prévues
+        à cet effet.
+      </p>
+
+      <p>
+        La sélection automatique de la langue s'effectue exclusivement
+        sur l'appareil utilisé et dans le navigateur. Cette fonction
+        ne transmet aucune donnée au fournisseur et ne stocke aucune
+        donnée de manière permanente.
+      </p>
+
+      <p>
+        Si aucune des langues proposées n'est détectée,
+        la version anglaise est affichée.
       </p>
 
     </div>
@@ -604,53 +816,66 @@ E-mail : <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
 
     <div class="section">
 
-      <h3>4. Durée de conservation</h3>
+      <h3>2.4 Prise de contact</h3>
 
       <p>
-        Les données saisies (noms de joueurs) sont conservées exclusivement
-        pendant la durée de la session de jeu concernée dans la mémoire vive
-        de l’utilisateur et sont intégralement supprimées à la fermeture ou
-        au redémarrage de l’application. Aucun stockage n’a lieu.
-      </p>
-
-    </div>
-
-
-    <div class="section">
-
-      <h3>5. Communication avec nous</h3>
-
-      <p>
-        Si vous communiquez avec nous au moyen d’un formulaire de contact,
-        par e-mail ou par un autre canal, nous traitons vos données à caractère
-        personnel afin de répondre à votre demande. Veuillez noter que les
-        communications non chiffrées par e-mail ne sont pas sécurisées.
-        Il ne peut être exclu que les données transmises de cette manière
-        soient lues, copiées, modifiées ou supprimées par des personnes non autorisées.
+        Si vous nous contactez par e-mail ou par un autre canal de
+        communication, nous traitons vos données à caractère personnel
+        afin de traiter votre demande.
       </p>
 
       <p>
-        Les données à caractère personnel que vous fournissez lors d’une prise
-        de contact par e-mail sont traitées uniquement dans le but de répondre
-        à votre demande. Elles ne sont transmises à des tiers que si cela est
-        nécessaire au traitement de cette prise de contact.
+        Veuillez noter qu'une communication non chiffrée par e-mail
+        n'est pas sécurisée. Il ne peut être exclu que les données
+        transmises de cette manière soient lues, copiées, modifiées
+        ou supprimées par des personnes non autorisées.
       </p>
 
       <p>
-        La base juridique est l’art. 6, par. 1, let. b RGPD lorsque votre demande
-        est liée à l’exécution d’un contrat ou est nécessaire à l’exécution
-        de mesures précontractuelles. Dans tous les autres cas, la base juridique
-        est notre intérêt légitime à traiter efficacement les demandes qui nous
-        sont adressées conformément à l’art. 6, par. 1, let. f RGPD.
+        Les données à caractère personnel que vous fournissez dans le
+        cadre d'une demande par e-mail, notamment votre adresse e-mail
+        ainsi que les informations supplémentaires que vous communiquez,
+        par exemple vos prénom et nom, votre adresse ou votre numéro
+        de téléphone, sont traitées uniquement dans le but de traiter
+        votre demande.
+      </p>
+
+      <p>
+        Une transmission à des tiers n'a lieu que dans la mesure où
+        elle est nécessaire au traitement de votre demande ou en raison
+        d'obligations légales. Dans le cadre des communications par e-mail,
+        les prestataires de services de messagerie et informatiques utilisés
+        peuvent notamment être des destinataires techniques des données.
+      </p>
+
+      <p>
+        La base juridique est l'art. 6, par. 1, let. b RGPD lorsque
+        votre demande est liée à l'exécution d'un contrat ou est nécessaire
+        à l'exécution de mesures précontractuelles.
+      </p>
+
+      <p>
+        Dans tous les autres cas, la base juridique est notre intérêt
+        légitime à traiter efficacement les demandes qui nous sont
+        adressées conformément à l'art. 6, par. 1, let. f RGPD.
+      </p>
+
+      <p>
         Lorsque des obligations légales de conservation existent,
-        la base juridique est l’art. 6, par. 1, let. c RGPD.
+        la base juridique est l'art. 6, par. 1, let. c RGPD.
       </p>
 
       <p>
-        Vos données à caractère personnel sont supprimées lorsqu’elles ne sont
-        plus nécessaires à la réalisation de l’objectif de votre prise de contact.
-        Nous attirons votre attention sur le fait que vos messages peuvent devoir
-        être conservés dans le cadre d’obligations légales de conservation.
+        Les données traitées dans le cadre de la prise de contact sont
+        supprimées dès que la demande concernée a été définitivement
+        traitée et qu'aucune obligation légale de conservation ni aucun
+        autre motif légitime ne justifie une conservation ultérieure.
+      </p>
+
+      <p>
+        Lorsque des obligations légales de conservation s'appliquent,
+        les données concernées sont conservées pendant la durée de la
+        période légale de conservation applicable, puis supprimées.
       </p>
 
     </div>
@@ -658,120 +883,99 @@ E-mail : <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
 
     <div class="section">
 
-      <h3>6. Droits des personnes concernées</h3>
+      <h3>2.5 Prise de décision automatisée / profilage</h3>
 
       <p>
-        Vous disposez des droits suivants en vertu du règlement général
-        sur la protection des données (RGPD) :
+        Aucune prise de décision automatisée au sens de l'art. 22 RGPD
+        n'a lieu. Aucun profilage n'est effectué.
       </p>
 
-      <ul>
-        <li>Droit d’accès (art. 15 RGPD)</li>
-        <li>Droit de rectification (art. 16 RGPD)</li>
-        <li>Droit à l’effacement (art. 17 RGPD)</li>
-        <li>Droit à la limitation du traitement (art. 18 RGPD)</li>
-        <li>Droit d’opposition au traitement (art. 21 RGPD)</li>
-        <li>Droit à la portabilité des données (art. 20 RGPD)</li>
-        <li>
-          Droit d’introduire une réclamation auprès d’une autorité de contrôle
-          (art. 13, par. 2, let. d RGPD)
-        </li>
-      </ul>
-
-    </div>
-
-
-    <div class="section">
-
-      <h3>7. Obligation de fournir des données à caractère personnel</h3>
-
-      <p>Il n’existe aucune obligation.</p>
-
-    </div>
-
-
-    <div class="section">
-
-      <h3>8. Prise de décision automatisée / profilage</h3>
-
       <p>
-        Aucune prise de décision automatisée au sens de l’art. 22 RGPD
-        n’a lieu dans l’application. Aucun profilage n’est effectué.
+        Il n'existe aucune obligation de fournir des données à caractère
+        personnel.
       </p>
 
     </div>
+
+
+    <h2>3. Droits des personnes concernées</h2>
+
+    <p>
+      Vous disposez des droits suivants en vertu du règlement général
+      sur la protection des données (RGPD) :
+    </p>
+
+    <ul>
+      <li>Droit d'accès (art. 15 RGPD)</li>
+      <li>Droit de rectification (art. 16 RGPD)</li>
+      <li>Droit à l'effacement (art. 17 RGPD)</li>
+      <li>Droit à la limitation du traitement (art. 18 RGPD)</li>
+      <li>Droit d'opposition au traitement (art. 21 RGPD)</li>
+      <li>Droit à la portabilité des données (art. 20 RGPD)</li>
+      <li>
+        Droit d'introduire une réclamation auprès d'une autorité
+        de contrôle de la protection des données (art. 77 RGPD)
+      </li>
+    </ul>
 
   </main>
 
 
-  <!-- ========================================================= -->
+  <!-- ====================================================== -->
   <!-- ESPAÑOL -->
-  <!-- ========================================================= -->
+  <!-- ====================================================== -->
 
   <main
     id="es"
     class="content"
     role="tabpanel"
     aria-labelledby="es-btn"
+    lang="es"
   >
 
-    <h1>BuzzedUP – Política de privacidad</h1>
+    <h1>Información de protección de datos conforme al art. 13 RGPD</h1>
 
-    <div class="language-note">
-      En caso de discrepancias entre las traducciones,
-      prevalecerá la versión alemana.
-    </div>
 
-    <h2>Aviso legal</h2>
+    <h2>1. Responsable del tratamiento en el sentido del RGPD</h2>
 
-    <p class="mono">
-Información de conformidad con el § 5 de la Ley alemana de Servicios Digitales (DDG):
-
+    <p class="address">
 Alexander Fabritus
 c/o flexdienst – #11224
 Kurt-Schumacher-Straße 76
 67663 Kaiserslautern
 Alemania
+    </p>
 
-Correo electrónico: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
+    <p>
+      Correo electrónico:
+      <a href="mailto:afabritius@gmx.de">
+        afabritius@gmx.de
+      </a>
     </p>
 
 
-    <h2>Información sobre protección de datos conforme al art. 13 RGPD</h2>
+    <h2>2. Tratamiento de datos personales</h2>
 
 
     <div class="section">
 
-      <h3>1. Responsable del tratamiento en el sentido del RGPD</h3>
-
-      <p class="mono">
-Alexander Fabritus
-c/o flexdienst – #11224
-Kurt-Schumacher-Straße 76
-67663 Kaiserslautern
-Alemania
-
-Correo electrónico: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
-      </p>
-
-    </div>
-
-
-    <div class="section">
-
-      <h3>2. Tratamiento de datos personales en la aplicación</h3>
+      <h3>2.1 Uso de la aplicación</h3>
 
       <p>
-        La aplicación no trata datos personales.
-        Los nombres de jugadores introducidos por los usuarios se almacenan
-        exclusivamente de forma local y temporal en la memoria de trabajo (RAM)
-        del dispositivo utilizado. No se realiza ningún almacenamiento,
-        transmisión ni otro tratamiento de estos datos.
+        En el marco del uso de la aplicación, el proveedor no trata
+        datos personales. La aplicación se ejecuta localmente en el
+        dispositivo utilizado.
       </p>
 
       <p>
-        El proveedor no tiene acceso a estos datos en ningún momento,
-        ni desde el punto de vista técnico ni jurídico.
+        Los nombres de jugadores que, en su caso, introduzcan los usuarios
+        se almacenan exclusivamente de forma local y temporal en la memoria
+        de trabajo (RAM) del dispositivo utilizado. El proveedor no realiza
+        ningún almacenamiento, transmisión ni otro tratamiento de estos datos.
+      </p>
+
+      <p>
+        El proveedor no tiene acceso a estos datos en ningún momento.
         Todas las entradas permanecen exclusivamente en el dispositivo
         correspondiente del usuario.
       </p>
@@ -781,11 +985,46 @@ Correo electrónico: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
 
     <div class="section">
 
-      <h3>3. Finalidad y base jurídica del tratamiento de datos</h3>
+      <h3>2.2 Puesta a disposición de este sitio web mediante GitHub Pages</h3>
 
       <p>
-        La introducción de un nombre de jugador tiene como única finalidad
-        identificar a los participantes durante una sesión de juego en curso.
+        Este sitio web se proporciona a través de GitHub Pages,
+        un servicio de GitHub, Inc.
+      </p>
+
+      <p>
+        Según GitHub, cuando se accede a un sitio web proporcionado
+        mediante GitHub Pages, la dirección IP del visitante se registra
+        y almacena con fines de seguridad.
+      </p>
+
+      <p>
+        Según su propia información, GitHub también trata datos personales
+        en Estados Unidos y en otros países. Para las transferencias
+        internacionales de datos, GitHub indica que utiliza, entre otros
+        mecanismos, las cláusulas contractuales tipo adoptadas por la
+        Comisión Europea y que participa en el Marco de Privacidad de Datos
+        UE-EE. UU. (EU-U.S. Data Privacy Framework).
+      </p>
+
+      <p>
+        GitHub Pages se utiliza para proporcionar este sitio web de forma
+        segura y técnicamente fiable. La base jurídica es el art. 6,
+        apartado 1, letra f del RGPD. El interés legítimo consiste en
+        proporcionar de forma segura y fiable la información sobre
+        protección de datos.
+      </p>
+
+      <p>
+        Encontrará más información sobre el tratamiento de datos personales
+        por parte de GitHub en la declaración de privacidad de GitHub:
+        <a
+          href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Declaración general de privacidad de GitHub
+        </a>.
       </p>
 
     </div>
@@ -793,13 +1032,23 @@ Correo electrónico: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
 
     <div class="section">
 
-      <h3>4. Duración del almacenamiento</h3>
+      <h3>2.3 Detección automática del idioma del navegador</h3>
 
       <p>
-        Los datos introducidos (nombres de jugadores) se almacenan exclusivamente
-        durante la sesión de juego correspondiente en la memoria RAM del usuario
-        y se eliminan por completo al finalizar o reiniciar la aplicación.
-        No se realiza ningún almacenamiento.
+        Para seleccionar automáticamente la versión lingüística adecuada,
+        se lee localmente el idioma preferido configurado en el navegador
+        mediante las funciones del navegador previstas para ello.
+      </p>
+
+      <p>
+        La selección automática del idioma se realiza exclusivamente
+        en el dispositivo utilizado y dentro del navegador. Esta función
+        no transmite datos al proveedor ni almacena datos de forma permanente.
+      </p>
+
+      <p>
+        Si no se detecta ninguno de los idiomas ofrecidos,
+        se muestra la versión en inglés.
       </p>
 
     </div>
@@ -807,142 +1056,168 @@ Correo electrónico: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
 
     <div class="section">
 
-      <h3>5. Comunicación con nosotros</h3>
+      <h3>2.4 Contacto</h3>
 
       <p>
-        Si se comunica con nosotros mediante un formulario de contacto,
-        por correo electrónico o a través de otro canal, tratamos sus datos
-        personales para gestionar su solicitud. Tenga en cuenta que la comunicación
-        mediante correo electrónico sin cifrar no es segura.
-        No puede descartarse que los datos transmitidos por esta vía sean leídos,
-        copiados, modificados o eliminados por personas no autorizadas.
+        Si se pone en contacto con nosotros por correo electrónico o
+        a través de otro canal de comunicación, tratamos sus datos
+        personales para gestionar su solicitud.
       </p>
 
       <p>
-        Los datos personales que facilite al ponerse en contacto con nosotros
-        mediante una consulta por correo electrónico se tratarán únicamente
-        con la finalidad de gestionar su solicitud. Solo se transmitirán
-        a terceros cuando sea necesario para gestionar dicho contacto.
+        Tenga en cuenta que la comunicación por correo electrónico
+        sin cifrar no es segura. No puede descartarse que los datos
+        transmitidos de este modo sean leídos, copiados, modificados
+        o eliminados por personas no autorizadas.
+      </p>
+
+      <p>
+        Los datos personales que facilite en el marco de una consulta
+        por correo electrónico, en particular su dirección de correo
+        electrónico y los datos adicionales que comunique, por ejemplo
+        nombre y apellidos, dirección o número de teléfono, se tratarán
+        únicamente para gestionar su solicitud.
+      </p>
+
+      <p>
+        Solo se transmitirán datos a terceros en la medida en que ello
+        sea necesario para gestionar su solicitud o debido a obligaciones
+        legales. En el marco de la comunicación por correo electrónico,
+        los proveedores de servicios de correo electrónico y de TI utilizados
+        pueden ser, en particular, destinatarios técnicos de los datos.
       </p>
 
       <p>
         La base jurídica es el art. 6, apartado 1, letra b del RGPD,
-        cuando su solicitud esté relacionada con el cumplimiento de un contrato
+        cuando su solicitud esté relacionada con la ejecución de un contrato
         o sea necesaria para la aplicación de medidas precontractuales.
-        En todos los demás casos, la base jurídica es nuestro interés legítimo
-        en gestionar eficazmente las consultas dirigidas a nosotros,
+      </p>
+
+      <p>
+        En todos los demás casos, la base jurídica es nuestro interés
+        legítimo en gestionar eficazmente las consultas dirigidas a nosotros,
         de conformidad con el art. 6, apartado 1, letra f del RGPD.
+      </p>
+
+      <p>
         Cuando existan obligaciones legales de conservación,
         la base jurídica será el art. 6, apartado 1, letra c del RGPD.
       </p>
 
       <p>
-        Sus datos personales se eliminarán cuando dejen de ser necesarios
-        para cumplir la finalidad de su contacto. Le informamos de que,
-        en su caso, sus mensajes deberán conservarse en virtud de obligaciones
-        legales de conservación.
+        Los datos tratados en el marco del contacto se eliminarán tan pronto
+        como la solicitud correspondiente haya sido gestionada definitivamente
+        y no existan obligaciones legales de conservación ni otros motivos
+        legítimos para continuar almacenándolos.
       </p>
-
-    </div>
-
-
-    <div class="section">
-
-      <h3>6. Derechos de los interesados</h3>
 
       <p>
-        Le corresponden los siguientes derechos conforme al Reglamento General
-        de Protección de Datos (RGPD):
+        Cuando existan obligaciones legales de conservación, los datos
+        correspondientes se conservarán durante el período legal aplicable
+        y se eliminarán posteriormente.
       </p>
 
-      <ul>
-        <li>Derecho de acceso (art. 15 RGPD)</li>
-        <li>Derecho de rectificación (art. 16 RGPD)</li>
-        <li>Derecho de supresión (art. 17 RGPD)</li>
-        <li>Derecho a la limitación del tratamiento (art. 18 RGPD)</li>
-        <li>Derecho de oposición al tratamiento (art. 21 RGPD)</li>
-        <li>Derecho a la portabilidad de los datos (art. 20 RGPD)</li>
-        <li>
-          Derecho a presentar una reclamación ante una autoridad de control
-          (art. 13, apartado 2, letra d RGPD)
-        </li>
-      </ul>
-
     </div>
 
 
     <div class="section">
 
-      <h3>7. Obligación de facilitar datos personales</h3>
-
-      <p>No existe ninguna obligación.</p>
-
-    </div>
-
-
-    <div class="section">
-
-      <h3>8. Toma de decisiones automatizada / elaboración de perfiles</h3>
+      <h3>2.5 Toma de decisiones automatizada / elaboración de perfiles</h3>
 
       <p>
-        En la aplicación no se lleva a cabo ninguna toma de decisiones
-        automatizada en el sentido del art. 22 RGPD.
-        No se realiza ninguna elaboración de perfiles.
+        No se lleva a cabo ninguna toma de decisiones automatizada
+        en el sentido del art. 22 RGPD. No se realiza ninguna elaboración
+        de perfiles.
+      </p>
+
+      <p>
+        No existe obligación de facilitar datos personales.
       </p>
 
     </div>
+
+
+    <h2>3. Derechos de los interesados</h2>
+
+    <p>
+      Le corresponden los siguientes derechos en virtud del Reglamento
+      General de Protección de Datos (RGPD):
+    </p>
+
+    <ul>
+      <li>Derecho de acceso (art. 15 RGPD)</li>
+      <li>Derecho de rectificación (art. 16 RGPD)</li>
+      <li>Derecho de supresión (art. 17 RGPD)</li>
+      <li>Derecho a la limitación del tratamiento (art. 18 RGPD)</li>
+      <li>Derecho de oposición al tratamiento (art. 21 RGPD)</li>
+      <li>Derecho a la portabilidad de los datos (art. 20 RGPD)</li>
+      <li>
+        Derecho a presentar una reclamación ante una autoridad
+        de control de protección de datos (art. 77 RGPD)
+      </li>
+    </ul>
 
   </main>
 
 
-  <!-- ========================================================= -->
+  <!-- ====================================================== -->
   <!-- PORTUGUÊS -->
-  <!-- ========================================================= -->
+  <!-- ====================================================== -->
 
   <main
     id="pt"
     class="content"
     role="tabpanel"
     aria-labelledby="pt-btn"
+    lang="pt"
   >
 
-    <h1>BuzzedUP – Política de Privacidade</h1>
+    <h1>Informações sobre proteção de dados nos termos do art. 13 do RGPD</h1>
 
-    <div class="language-note">
-      Em caso de divergências entre as traduções,
-      prevalece a versão alemã.
-    </div>
 
-    <h2>Informações legais</h2>
+    <h2>1. Responsável pelo tratamento na aceção do RGPD</h2>
 
-    <p class="mono">
-Informações nos termos do § 5 da Lei Alemã dos Serviços Digitais (DDG):
-
+    <p class="address">
 Alexander Fabritus
 c/o flexdienst – #11224
 Kurt-Schumacher-Straße 76
 67663 Kaiserslautern
 Alemanha
+    </p>
 
-E-mail: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
+    <p>
+      E-mail:
+      <a href="mailto:afabritius@gmx.de">
+        afabritius@gmx.de
+      </a>
     </p>
 
 
-    <h2>Informações sobre proteção de dados nos termos do art. 13 do RGPD</h2>
+    <h2>2. Tratamento de dados pessoais</h2>
 
 
     <div class="section">
 
-      <h3>1. Responsável pelo tratamento na aceção do RGPD</h3>
+      <h3>2.1 Utilização da aplicação</h3>
 
-      <p class="mono">
-Alexander Fabritus
-c/o flexdienst – #11224
-Kurt-Schumacher-Straße 76
-67663 Kaiserslautern
-Alemanha
+      <p>
+        No âmbito da utilização da aplicação, o fornecedor não trata
+        quaisquer dados pessoais. A aplicação é executada localmente
+        no dispositivo utilizado.
+      </p>
 
-E-mail: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
+      <p>
+        Os nomes dos jogadores eventualmente introduzidos pelos utilizadores
+        são armazenados exclusivamente de forma local e temporária na memória
+        de trabalho (RAM) do dispositivo utilizado. Não ocorre qualquer
+        armazenamento, transmissão ou outro tratamento destes dados
+        pelo fornecedor.
+      </p>
+
+      <p>
+        O fornecedor não tem acesso a estes dados em momento algum.
+        Todas as informações introduzidas permanecem exclusivamente
+        no respetivo dispositivo do utilizador.
       </p>
 
     </div>
@@ -950,20 +1225,46 @@ E-mail: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
 
     <div class="section">
 
-      <h3>2. Tratamento de dados pessoais na aplicação</h3>
+      <h3>2.2 Disponibilização deste site através do GitHub Pages</h3>
 
       <p>
-        A aplicação não trata quaisquer dados pessoais.
-        Os nomes dos jogadores introduzidos pelos utilizadores são armazenados
-        exclusivamente de forma local e temporária na memória de trabalho (RAM)
-        do dispositivo utilizado. Não ocorre qualquer armazenamento,
-        transmissão ou outro tratamento destes dados.
+        Este site é disponibilizado através do GitHub Pages,
+        um serviço da GitHub, Inc.
       </p>
 
       <p>
-        O fornecedor não tem acesso a estes dados em momento algum,
-        nem técnica nem juridicamente. Todas as informações introduzidas
-        permanecem exclusivamente no respetivo dispositivo do utilizador.
+        Segundo a GitHub, quando um site disponibilizado através
+        do GitHub Pages é acedido, o endereço IP do visitante é
+        registado e armazenado para fins de segurança.
+      </p>
+
+      <p>
+        Segundo as suas próprias informações, a GitHub também trata
+        dados pessoais nos Estados Unidos e noutros países. Para
+        transferências internacionais de dados, a GitHub declara utilizar,
+        entre outros mecanismos, as cláusulas contratuais-tipo adotadas
+        pela Comissão Europeia e participar no Quadro de Privacidade
+        de Dados UE-EUA (EU-U.S. Data Privacy Framework).
+      </p>
+
+      <p>
+        O GitHub Pages é utilizado para disponibilizar este site
+        de forma segura e tecnicamente fiável. A base jurídica é
+        o art. 6.º, n.º 1, alínea f) do RGPD. O interesse legítimo
+        consiste na disponibilização segura e fiável das informações
+        relativas à proteção de dados.
+      </p>
+
+      <p>
+        Pode encontrar mais informações sobre o tratamento de dados pessoais
+        pela GitHub na declaração de privacidade da GitHub:
+        <a
+          href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Declaração Geral de Privacidade da GitHub
+        </a>.
       </p>
 
     </div>
@@ -971,11 +1272,23 @@ E-mail: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
 
     <div class="section">
 
-      <h3>3. Finalidade e base jurídica do tratamento de dados</h3>
+      <h3>2.3 Deteção automática do idioma do navegador</h3>
 
       <p>
-        A introdução de um nome de jogador serve exclusivamente para identificar
-        os participantes durante uma sessão de jogo em curso.
+        Para selecionar automaticamente a versão linguística adequada,
+        o idioma preferido configurado no navegador é lido localmente
+        através das funções do navegador previstas para esse fim.
+      </p>
+
+      <p>
+        A seleção automática do idioma ocorre exclusivamente no dispositivo
+        utilizado e no navegador. Esta função não transmite quaisquer dados
+        ao fornecedor nem armazena dados de forma permanente.
+      </p>
+
+      <p>
+        Se nenhum dos idiomas disponibilizados for detetado,
+        é apresentada a versão em inglês.
       </p>
 
     </div>
@@ -983,155 +1296,164 @@ E-mail: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
 
     <div class="section">
 
-      <h3>4. Duração do armazenamento</h3>
+      <h3>2.4 Contacto</h3>
 
       <p>
-        Os dados introduzidos (nomes dos jogadores) são armazenados exclusivamente
-        durante a respetiva sessão de jogo na memória RAM do utilizador
-        e são completamente eliminados quando a aplicação é encerrada ou reiniciada.
-        Não ocorre armazenamento.
-      </p>
-
-    </div>
-
-
-    <div class="section">
-
-      <h3>5. Comunicação connosco</h3>
-
-      <p>
-        Se comunicar connosco através de um formulário de contacto,
-        por e-mail ou através de outro canal, tratamos os seus dados pessoais
-        para responder ao seu pedido. Tenha em atenção que a comunicação
-        por e-mail não encriptado não é segura. Não se pode excluir a possibilidade
-        de os dados transmitidos desta forma serem lidos, copiados,
-        alterados ou eliminados por pessoas não autorizadas.
+        Se nos contactar por e-mail ou através de outro canal de comunicação,
+        tratamos os seus dados pessoais para responder ao seu pedido.
       </p>
 
       <p>
-        Os dados pessoais que fornecer ao contactar-nos através de um pedido
-        por e-mail serão tratados apenas para a finalidade de responder ao seu pedido.
-        A transmissão a terceiros só ocorre quando tal seja necessária
-        para o tratamento desse contacto.
+        Tenha em atenção que a comunicação por e-mail não encriptado
+        não é segura. Não se pode excluir a possibilidade de os dados
+        transmitidos desta forma serem lidos, copiados, alterados ou
+        eliminados por pessoas não autorizadas.
+      </p>
+
+      <p>
+        Os dados pessoais que fornecer no âmbito de um pedido por e-mail,
+        nomeadamente o seu endereço de e-mail, bem como as informações
+        adicionais que comunicar, por exemplo nome e apelido, morada ou
+        número de telefone, são tratados apenas para responder ao seu pedido.
+      </p>
+
+      <p>
+        Os dados apenas serão transmitidos a terceiros na medida em que
+        tal seja necessário para responder ao seu pedido ou devido a
+        obrigações legais. No âmbito da comunicação por e-mail,
+        os prestadores de serviços de e-mail e de TI utilizados podem,
+        em particular, ser destinatários técnicos dos dados.
       </p>
 
       <p>
         A base jurídica é o art. 6.º, n.º 1, alínea b) do RGPD,
-        se o seu pedido estiver relacionado com o cumprimento de um contrato
+        se o seu pedido estiver relacionado com a execução de um contrato
         ou for necessário para a realização de medidas pré-contratuais.
-        Em todos os outros casos, a base jurídica é o nosso interesse legítimo
-        no tratamento eficaz dos pedidos que nos são dirigidos,
+      </p>
+
+      <p>
+        Em todos os outros casos, a base jurídica é o nosso interesse
+        legítimo no tratamento eficaz dos pedidos que nos são dirigidos,
         nos termos do art. 6.º, n.º 1, alínea f) do RGPD.
+      </p>
+
+      <p>
         Quando existam obrigações legais de conservação,
         a base jurídica é o art. 6.º, n.º 1, alínea c) do RGPD.
       </p>
 
       <p>
-        Os seus dados pessoais serão eliminados quando deixarem de ser necessários
-        para cumprir a finalidade do seu contacto. Chamamos a atenção para o facto
-        de que as suas mensagens poderão ter de ser conservadas devido a obrigações
-        legais de conservação.
+        Os dados tratados no âmbito do contacto são eliminados assim
+        que o respetivo pedido tiver sido definitivamente tratado e
+        não existam obrigações legais de conservação ou outros motivos
+        legítimos para a continuação do armazenamento.
       </p>
-
-    </div>
-
-
-    <div class="section">
-
-      <h3>6. Direitos dos titulares dos dados</h3>
 
       <p>
-        Tem os seguintes direitos ao abrigo do Regulamento Geral
-        sobre a Proteção de Dados (RGPD):
+        Quando existam obrigações legais de conservação, os dados em causa
+        são armazenados durante o período legal de conservação aplicável
+        e posteriormente eliminados.
       </p>
 
-      <ul>
-        <li>Direito de acesso (art. 15.º RGPD)</li>
-        <li>Direito de retificação (art. 16.º RGPD)</li>
-        <li>Direito ao apagamento (art. 17.º RGPD)</li>
-        <li>Direito à limitação do tratamento (art. 18.º RGPD)</li>
-        <li>Direito de oposição ao tratamento (art. 21.º RGPD)</li>
-        <li>Direito à portabilidade dos dados (art. 20.º RGPD)</li>
-        <li>
-          Direito de apresentar reclamação junto de uma autoridade de controlo
-          (art. 13.º, n.º 2, alínea d) RGPD)
-        </li>
-      </ul>
-
     </div>
 
 
     <div class="section">
 
-      <h3>7. Obrigação de fornecer dados pessoais</h3>
-
-      <p>Não existe qualquer obrigação.</p>
-
-    </div>
-
-
-    <div class="section">
-
-      <h3>8. Tomada de decisões automatizada / definição de perfis</h3>
+      <h3>2.5 Tomada de decisões automatizada / definição de perfis</h3>
 
       <p>
-        Não ocorre na aplicação qualquer tomada de decisões automatizada
-        na aceção do art. 22.º do RGPD. Não é realizada qualquer definição de perfis.
+        Não ocorre qualquer tomada de decisões automatizada na aceção
+        do art. 22.º do RGPD. Não é realizada qualquer definição de perfis.
+      </p>
+
+      <p>
+        Não existe qualquer obrigação de fornecer dados pessoais.
       </p>
 
     </div>
+
+
+    <h2>3. Direitos dos titulares dos dados</h2>
+
+    <p>
+      Tem os seguintes direitos ao abrigo do Regulamento Geral
+      sobre a Proteção de Dados (RGPD):
+    </p>
+
+    <ul>
+      <li>Direito de acesso (art. 15.º RGPD)</li>
+      <li>Direito de retificação (art. 16.º RGPD)</li>
+      <li>Direito ao apagamento (art. 17.º RGPD)</li>
+      <li>Direito à limitação do tratamento (art. 18.º RGPD)</li>
+      <li>Direito de oposição ao tratamento (art. 21.º RGPD)</li>
+      <li>Direito à portabilidade dos dados (art. 20.º RGPD)</li>
+      <li>
+        Direito de apresentar reclamação junto de uma autoridade
+        de controlo de proteção de dados (art. 77.º RGPD)
+      </li>
+    </ul>
 
   </main>
 
 
-  <!-- ========================================================= -->
+  <!-- ====================================================== -->
   <!-- ITALIANO -->
-  <!-- ========================================================= -->
+  <!-- ====================================================== -->
 
   <main
     id="it"
     class="content"
     role="tabpanel"
     aria-labelledby="it-btn"
+    lang="it"
   >
 
-    <h1>BuzzedUP – Informativa sulla privacy</h1>
+    <h1>Informativa sulla protezione dei dati ai sensi dell'art. 13 GDPR</h1>
 
-    <div class="language-note">
-      In caso di discrepanze tra le traduzioni,
-      prevale la versione tedesca.
-    </div>
 
-    <h2>Note legali</h2>
+    <h2>1. Titolare del trattamento ai sensi del GDPR</h2>
 
-    <p class="mono">
-Informazioni ai sensi del § 5 della legge tedesca sui servizi digitali (DDG):
-
+    <p class="address">
 Alexander Fabritus
 c/o flexdienst – #11224
 Kurt-Schumacher-Straße 76
 67663 Kaiserslautern
 Germania
+    </p>
 
-E-mail: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
+    <p>
+      E-mail:
+      <a href="mailto:afabritius@gmx.de">
+        afabritius@gmx.de
+      </a>
     </p>
 
 
-    <h2>Informazioni sulla protezione dei dati ai sensi dell'art. 13 GDPR</h2>
+    <h2>2. Trattamento dei dati personali</h2>
 
 
     <div class="section">
 
-      <h3>1. Titolare del trattamento ai sensi del GDPR</h3>
+      <h3>2.1 Utilizzo dell'app</h3>
 
-      <p class="mono">
-Alexander Fabritus
-c/o flexdienst – #11224
-Kurt-Schumacher-Straße 76
-67663 Kaiserslautern
-Germania
+      <p>
+        Nell'ambito dell'utilizzo dell'app, il fornitore non tratta
+        dati personali. L'app viene eseguita localmente sul dispositivo
+        utilizzato.
+      </p>
 
-E-mail: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
+      <p>
+        I nomi dei giocatori eventualmente inseriti dagli utenti vengono
+        memorizzati esclusivamente in locale e temporaneamente nella memoria
+        di lavoro (RAM) del dispositivo utilizzato. Il fornitore non effettua
+        alcuna memorizzazione, trasmissione o altro trattamento di tali dati.
+      </p>
+
+      <p>
+        Il fornitore non ha accesso a questi dati in nessun momento.
+        Tutti i dati inseriti rimangono esclusivamente sul rispettivo
+        dispositivo dell'utente.
       </p>
 
     </div>
@@ -1139,20 +1461,45 @@ E-mail: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
 
     <div class="section">
 
-      <h3>2. Trattamento dei dati personali nell'app</h3>
+      <h3>2.2 Messa a disposizione di questo sito web tramite GitHub Pages</h3>
 
       <p>
-        L'app non tratta dati personali.
-        I nomi dei giocatori inseriti dagli utenti vengono memorizzati
-        esclusivamente in locale e temporaneamente nella memoria di lavoro (RAM)
-        del dispositivo utilizzato. Non avviene alcuna memorizzazione,
-        trasmissione o altro trattamento di tali dati.
+        Questo sito web è messo a disposizione tramite GitHub Pages,
+        un servizio di GitHub, Inc.
       </p>
 
       <p>
-        Il fornitore non ha accesso a questi dati in nessun momento,
-        né tecnicamente né giuridicamente. Tutti i dati inseriti rimangono
-        esclusivamente sul rispettivo dispositivo dell'utente.
+        Secondo GitHub, quando si accede a un sito web messo a disposizione
+        tramite GitHub Pages, l'indirizzo IP del visitatore viene registrato
+        e memorizzato per finalità di sicurezza.
+      </p>
+
+      <p>
+        Secondo le proprie informazioni, GitHub tratta dati personali
+        anche negli Stati Uniti e in altri Paesi. Per i trasferimenti
+        internazionali di dati, GitHub dichiara di utilizzare, tra gli
+        altri meccanismi, le clausole contrattuali standard adottate dalla
+        Commissione europea e di partecipare all'EU-U.S. Data Privacy Framework.
+      </p>
+
+      <p>
+        GitHub Pages viene utilizzato per mettere a disposizione questo
+        sito web in modo sicuro e tecnicamente affidabile. La base giuridica
+        è l'art. 6, par. 1, lett. f GDPR. L'interesse legittimo consiste
+        nella messa a disposizione sicura e affidabile delle informazioni
+        sulla protezione dei dati.
+      </p>
+
+      <p>
+        Ulteriori informazioni sul trattamento dei dati personali da parte
+        di GitHub sono disponibili nell'informativa sulla privacy di GitHub:
+        <a
+          href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Informativa generale sulla privacy di GitHub
+        </a>.
       </p>
 
     </div>
@@ -1160,11 +1507,23 @@ E-mail: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
 
     <div class="section">
 
-      <h3>3. Finalità e base giuridica del trattamento dei dati</h3>
+      <h3>2.3 Rilevamento automatico della lingua del browser</h3>
 
       <p>
-        L'inserimento del nome di un giocatore serve esclusivamente
-        a identificare i partecipanti durante una sessione di gioco in corso.
+        Per selezionare automaticamente la versione linguistica appropriata,
+        la lingua preferita impostata nel browser viene letta localmente
+        mediante le funzioni del browser previste a tale scopo.
+      </p>
+
+      <p>
+        La selezione automatica della lingua avviene esclusivamente
+        sul dispositivo utilizzato e nel browser. Questa funzione non
+        trasmette dati al fornitore e non memorizza dati in modo permanente.
+      </p>
+
+      <p>
+        Se non viene rilevata nessuna delle lingue disponibili,
+        viene visualizzata la versione inglese.
       </p>
 
     </div>
@@ -1172,54 +1531,65 @@ E-mail: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
 
     <div class="section">
 
-      <h3>4. Durata della conservazione</h3>
+      <h3>2.4 Contatto</h3>
 
       <p>
-        I dati inseriti (nomi dei giocatori) vengono conservati esclusivamente
-        per la durata della rispettiva sessione di gioco nella RAM dell'utente
-        e vengono completamente eliminati alla chiusura o al riavvio dell'app.
-        Non avviene alcuna conservazione.
-      </p>
-
-    </div>
-
-
-    <div class="section">
-
-      <h3>5. Comunicazione con noi</h3>
-
-      <p>
-        Se comunicate con noi tramite un modulo di contatto,
-        per e-mail o attraverso un altro canale, trattiamo i vostri dati personali
-        al fine di gestire la vostra richiesta. Si prega di notare che la comunicazione
-        tramite e-mail non crittografata non è sicura.
-        Non si può escludere che i dati trasmessi in questo modo possano essere letti,
-        copiati, modificati o cancellati da persone non autorizzate.
+        Se ci contattate tramite e-mail o attraverso un altro canale
+        di comunicazione, trattiamo i vostri dati personali al fine
+        di gestire la vostra richiesta.
       </p>
 
       <p>
-        I dati personali forniti nell'ambito di una richiesta inviata tramite e-mail
-        vengono trattati esclusivamente allo scopo di gestire la vostra richiesta.
-        La comunicazione a terzi avviene solo se necessaria per la gestione
-        di tale contatto.
+        Si prega di notare che la comunicazione tramite e-mail non
+        crittografata non è sicura. Non si può escludere che i dati
+        trasmessi in questo modo possano essere letti, copiati,
+        modificati o cancellati da persone non autorizzate.
       </p>
 
       <p>
-        La base giuridica è l'art. 6, par. 1, lett. b GDPR,
-        qualora la richiesta sia collegata all'esecuzione di un contratto
+        I dati personali forniti nell'ambito di una richiesta tramite e-mail,
+        in particolare il vostro indirizzo e-mail e le informazioni aggiuntive
+        da voi comunicate, ad esempio nome e cognome, indirizzo o numero
+        di telefono, vengono trattati esclusivamente allo scopo di gestire
+        la vostra richiesta.
+      </p>
+
+      <p>
+        I dati vengono trasmessi a terzi solo nella misura in cui ciò sia
+        necessario per gestire la vostra richiesta o in virtù di obblighi
+        di legge. Nell'ambito della comunicazione tramite e-mail,
+        i fornitori di servizi e-mail e IT utilizzati possono in particolare
+        essere destinatari tecnici dei dati.
+      </p>
+
+      <p>
+        La base giuridica è l'art. 6, par. 1, lett. b GDPR qualora
+        la vostra richiesta sia collegata all'esecuzione di un contratto
         o sia necessaria all'attuazione di misure precontrattuali.
-        In tutti gli altri casi, la base giuridica è il nostro legittimo interesse
-        alla gestione efficace delle richieste che ci vengono rivolte
-        ai sensi dell'art. 6, par. 1, lett. f GDPR.
+      </p>
+
+      <p>
+        In tutti gli altri casi, la base giuridica è il nostro legittimo
+        interesse alla gestione efficace delle richieste che ci vengono
+        rivolte ai sensi dell'art. 6, par. 1, lett. f GDPR.
+      </p>
+
+      <p>
         Qualora sussistano obblighi legali di conservazione,
         la base giuridica è l'art. 6, par. 1, lett. c GDPR.
       </p>
 
       <p>
-        I vostri dati personali saranno cancellati quando non saranno più necessari
-        al raggiungimento dello scopo del contatto. Si segnala che i messaggi
-        potrebbero dover essere conservati nell'ambito di obblighi legali
-        di conservazione.
+        I dati trattati nell'ambito del contatto vengono cancellati non appena
+        la relativa richiesta è stata definitivamente evasa e non sussistono
+        obblighi legali di conservazione o altri motivi legittimi per
+        un'ulteriore conservazione.
+      </p>
+
+      <p>
+        Qualora sussistano obblighi legali di conservazione, i dati interessati
+        vengono conservati per la durata del periodo di conservazione previsto
+        dalla legge applicabile e successivamente cancellati.
       </p>
 
     </div>
@@ -1227,136 +1597,137 @@ E-mail: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
 
     <div class="section">
 
-      <h3>6. Diritti degli interessati</h3>
+      <h3>2.5 Processo decisionale automatizzato / profilazione</h3>
 
       <p>
-        Ai sensi del Regolamento generale sulla protezione dei dati (GDPR)
-        avete i seguenti diritti:
-      </p>
-
-      <ul>
-        <li>Diritto di accesso (art. 15 GDPR)</li>
-        <li>Diritto di rettifica (art. 16 GDPR)</li>
-        <li>Diritto alla cancellazione (art. 17 GDPR)</li>
-        <li>Diritto alla limitazione del trattamento (art. 18 GDPR)</li>
-        <li>Diritto di opposizione al trattamento (art. 21 GDPR)</li>
-        <li>Diritto alla portabilità dei dati (art. 20 GDPR)</li>
-        <li>
-          Diritto di proporre reclamo a un'autorità di controllo
-          (art. 13, par. 2, lett. d GDPR)
-        </li>
-      </ul>
-
-    </div>
-
-
-    <div class="section">
-
-      <h3>7. Obbligo di fornire dati personali</h3>
-
-      <p>Non sussiste alcun obbligo.</p>
-
-    </div>
-
-
-    <div class="section">
-
-      <h3>8. Processo decisionale automatizzato / profilazione</h3>
-
-      <p>
-        Nell'app non viene effettuato alcun processo decisionale automatizzato
+        Non viene effettuato alcun processo decisionale automatizzato
         ai sensi dell'art. 22 GDPR. Non viene effettuata alcuna profilazione.
       </p>
 
+      <p>
+        Non sussiste alcun obbligo di fornire dati personali.
+      </p>
+
     </div>
+
+
+    <h2>3. Diritti degli interessati</h2>
+
+    <p>
+      Ai sensi del Regolamento generale sulla protezione dei dati (GDPR)
+      avete i seguenti diritti:
+    </p>
+
+    <ul>
+      <li>Diritto di accesso (art. 15 GDPR)</li>
+      <li>Diritto di rettifica (art. 16 GDPR)</li>
+      <li>Diritto alla cancellazione (art. 17 GDPR)</li>
+      <li>Diritto alla limitazione del trattamento (art. 18 GDPR)</li>
+      <li>Diritto di opposizione al trattamento (art. 21 GDPR)</li>
+      <li>Diritto alla portabilità dei dati (art. 20 GDPR)</li>
+      <li>
+        Diritto di proporre reclamo a un'autorità di controllo
+        per la protezione dei dati (art. 77 GDPR)
+      </li>
+    </ul>
 
   </main>
 
 
+  <!-- ====================================================== -->
+  <!-- LANGUAGE HANDLING -->
+  <!-- ====================================================== -->
+
   <script>
-    /*
-     * Supported languages.
-     * English is always the fallback/default language.
-     */
-    const supportedLanguages = ["en", "de", "fr", "es", "pt", "it"];
+    const supportedLanguages = [
+      "en",
+      "de",
+      "fr",
+      "es",
+      "pt",
+      "it"
+    ];
+
     const fallbackLanguage = "en";
 
-    /*
-     * Browser title for each language.
-     */
     const pageTitles = {
-      en: "Privacy Policy - BuzzedUP",
-      de: "Datenschutzerklärung - BuzzedUP",
-      fr: "Politique de confidentialité - BuzzedUP",
-      es: "Política de privacidad - BuzzedUP",
-      pt: "Política de Privacidade - BuzzedUP",
-      it: "Informativa sulla privacy - BuzzedUP"
+      en: "Privacy Notice pursuant to Art. 13 GDPR",
+      de: "Datenschutzerklärung gem. Art. 13 DSGVO",
+      fr: "Informations sur la protection des données conformément à l'art. 13 RGPD",
+      es: "Información de protección de datos conforme al art. 13 RGPD",
+      pt: "Informações sobre proteção de dados nos termos do art. 13 do RGPD",
+      it: "Informativa sulla protezione dei dati ai sensi dell'art. 13 GDPR"
     };
 
 
-    /*
-     * Activate a language.
+    /**
+     * Activates the requested language.
+     * Unsupported languages automatically fall back to English.
      */
-    function activateLanguage(lang) {
+    function activateLanguage(language) {
+
+      const lang = supportedLanguages.includes(language)
+        ? language
+        : fallbackLanguage;
+
 
       /*
-       * Security/fallback:
-       * Unknown language codes always become English.
+       * Language buttons
        */
-      if (!supportedLanguages.includes(lang)) {
-        lang = fallbackLanguage;
-      }
+      document
+        .querySelectorAll(".lang-switch button")
+        .forEach((button) => {
+
+          const active =
+            button.dataset.lang === lang;
+
+          button.classList.toggle(
+            "active",
+            active
+          );
+
+          button.setAttribute(
+            "aria-selected",
+            active ? "true" : "false"
+          );
+
+          button.tabIndex =
+            active ? 0 : -1;
+        });
 
 
       /*
-       * Update language buttons.
+       * Language content
        */
-      document.querySelectorAll(".lang-switch button").forEach(button => {
+      document
+        .querySelectorAll(".content")
+        .forEach((content) => {
 
-        const isActive = button.dataset.lang === lang;
+          content.classList.toggle(
+            "active",
+            content.id === lang
+          );
 
-        button.classList.toggle("active", isActive);
-
-        button.setAttribute(
-          "aria-selected",
-          isActive ? "true" : "false"
-        );
-
-        button.tabIndex = isActive ? 0 : -1;
-
-      });
+        });
 
 
       /*
-       * Update content panels.
-       */
-      document.querySelectorAll(".content").forEach(content => {
-
-        content.classList.toggle(
-          "active",
-          content.id === lang
-        );
-
-      });
-
-
-      /*
-       * Update the HTML lang attribute.
+       * Update document language
        */
       document.documentElement.lang = lang;
 
 
       /*
-       * Update browser/tab title.
+       * Update browser title
        */
       document.title =
-        pageTitles[lang] || pageTitles[fallbackLanguage];
-
+        pageTitles[lang] ||
+        pageTitles[fallbackLanguage];
     }
 
 
-    /*
-     * Detect the preferred browser language.
+    /**
+     * Detect preferred browser language.
      *
      * Examples:
      *
@@ -1368,6 +1739,7 @@ E-mail: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
      * en-GB -> en
      *
      * fr-FR -> fr
+     * fr-CH -> fr
      * fr-CA -> fr
      *
      * es-ES -> es
@@ -1378,14 +1750,18 @@ E-mail: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
      *
      * it-IT -> it
      *
-     * unsupported -> en
+     * Unsupported language -> en
      */
     function detectPreferredLanguage() {
 
       const browserLanguages =
-        navigator.languages && navigator.languages.length
+        navigator.languages &&
+        navigator.languages.length
           ? navigator.languages
-          : [navigator.language || fallbackLanguage];
+          : [
+              navigator.language ||
+              fallbackLanguage
+            ];
 
 
       for (const browserLanguage of browserLanguages) {
@@ -1394,53 +1770,64 @@ E-mail: <a href="mailto:afabritius@gmx.de">afabritius@gmx.de</a>
           continue;
         }
 
-        const normalizedLanguage =
-          browserLanguage.toLowerCase();
+        const normalized =
+          browserLanguage
+            .trim()
+            .toLowerCase();
 
         const baseLanguage =
-          normalizedLanguage.split("-")[0];
+          normalized.split("-")[0];
 
 
-        if (supportedLanguages.includes(baseLanguage)) {
+        if (
+          supportedLanguages.includes(
+            baseLanguage
+          )
+        ) {
           return baseLanguage;
         }
-
       }
 
 
-      /*
-       * Browser language not supported:
-       * fallback to English.
-       */
       return fallbackLanguage;
-
     }
 
 
     /*
-     * Manual language selection.
+     * Manual language switching.
+     *
+     * No cookie, localStorage or other persistent
+     * storage is used.
      */
-    document.querySelectorAll(".lang-switch button").forEach(button => {
+    document
+      .querySelectorAll(".lang-switch button")
+      .forEach((button) => {
 
-      button.addEventListener("click", () => {
-        activateLanguage(button.dataset.lang);
+        button.addEventListener(
+          "click",
+          () => {
+            activateLanguage(
+              button.dataset.lang
+            );
+          }
+        );
+
       });
-
-    });
 
 
     /*
-     * Automatic language detection when the page loads.
+     * Automatic browser language detection.
      */
-    document.addEventListener("DOMContentLoaded", () => {
+    document.addEventListener(
+      "DOMContentLoaded",
+      () => {
 
-      const detectedLanguage =
-        detectPreferredLanguage();
+        activateLanguage(
+          detectPreferredLanguage()
+        );
 
-      activateLanguage(detectedLanguage);
-
-    });
-
+      }
+    );
   </script>
 
 </body>
